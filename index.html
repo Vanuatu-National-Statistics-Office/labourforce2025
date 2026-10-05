@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanuatu LFS 2025</title>
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root {
+  color-scheme: light;
+  --page: #f5f4f0;
+  --surface-1: #fcfcfb;
+  --border: #e4e2dc;
+  --grid: #ecebe6;
+  --hover: rgba(0, 0, 0, 0.045);
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #7a7974;
+  /* Palette from the Vanuatu Bureau of Statistics logo (navy, red, teal, gold),
+     stepped for chart legibility and checked for colour-blind separation */
+  --brand-navy: #265068;
+  --brand-gold: #f9ae42;
+  --logo-navy: #265068;
+  --logo-teal: #3d7373;
+  --logo-red: #ef4438;
+  --org-ink: #c8352a;
+  --gold-ink: #b0700e;
+  --teal-ink: #00756a;
+  --s-male: #00608c;
+  --s-female: #ef4438;
+  --s-urban: #008a7a;
+  --s-rural: #d9952a;
+  --s-old: #b4b2aa;
+  --lf-out: #d6d4cc;
+  --accent-bg: #e1f0ee;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #121211;
+    --surface-1: #1a1a19;
+    --border: #2e2e2b;
+    --grid: #2a2a27;
+    --hover: rgba(255, 255, 255, 0.06);
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #8e8d85;
+    --brand-navy: #8fc3e0;
+    --logo-navy: #4f86a8;
+    --logo-teal: #4f9a9a;
+    --org-ink: #f47d73;
+    --gold-ink: #f9ae42;
+    --teal-ink: #4fc4b5;
+    --s-male: #2f89b9;
+    --s-female: #e95144;
+    --s-urban: #009d8c;
+    --s-rural: #c58203;
+    --s-old: #5d5c57;
+    --lf-out: #45443f;
+    --accent-bg: #133330;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #121211;
+  --surface-1: #1a1a19;
+  --border: #2e2e2b;
+  --grid: #2a2a27;
+  --hover: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #8e8d85;
+  --brand-navy: #8fc3e0;
+  --logo-navy: #4f86a8;
+  --logo-teal: #4f9a9a;
+  --org-ink: #f47d73;
+  --gold-ink: #f9ae42;
+  --teal-ink: #4fc4b5;
+  --s-male: #2f89b9;
+  --s-female: #e95144;
+  --s-urban: #009d8c;
+  --s-rural: #c58203;
+  --s-old: #5d5c57;
+  --lf-out: #45443f;
+  --accent-bg: #133330;
+}
+/* roles built from the four series hues; they follow light/dark automatically */
+:root {
+  --s-total: var(--s-male);
+  --s-new: var(--s-male);
+  --s-a1: var(--s-male);
+  --s-a2: var(--s-rural);
+  --s-a3: var(--s-urban);
+  --lf-emp: var(--s-urban);
+  --lf-unemp: var(--s-female);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text-primary);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; }
+
+/* ---------- app shell: sidebar + main ---------- */
+.app { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+.sidebar {
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  background: var(--surface-1); border-right: 1px solid var(--border);
+  padding: 16px 12px 32px;
+}
+.sb-brand { display: flex; align-items: center; gap: 10px; padding: 2px 8px 14px; text-decoration: none; }
+.sb-brand img { width: 26px; height: auto; display: block; }
+.sb-brand b { display: block; font-size: 14px; color: var(--brand-navy); line-height: 1.2; }
+.sb-brand span { display: block; font-size: 11.5px; color: var(--text-muted); }
+.sb-search {
+  width: 100%; font: inherit; font-size: 13px; padding: 7px 10px; margin-bottom: 6px;
+  border: 1px solid var(--border); border-radius: 8px; background: var(--page); color: var(--text-primary);
+}
+.sb-search:focus { outline: 2px solid var(--s-urban); outline-offset: -1px; }
+.nav-group { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); padding: 14px 10px 4px; }
+.nav a {
+  display: flex; gap: 8px; align-items: baseline; padding: 6px 10px; border-radius: 8px;
+  color: var(--text-secondary); text-decoration: none; font-size: 13px; line-height: 1.3;
+}
+.nav a:hover { background: var(--hover); color: var(--text-primary); }
+.nav a.active { background: var(--accent-bg); color: var(--text-primary); font-weight: 600; box-shadow: inset 3px 0 0 var(--s-urban); }
+.nav .code { flex: none; min-width: 42px; font-size: 11.5px; font-weight: 600; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.nav a.active .code { color: var(--teal-ink); }
+.nav .empty { padding: 10px; color: var(--text-muted); font-size: 12.5px; }
+.scrim { display: none; }
+.menu-btn { display: none; }
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 20px 20px 48px; }
+
+@media (max-width: 960px) {
+  .app { display: block; }
+  .sidebar {
+    position: fixed; inset: 0 auto 0 0; width: min(300px, 86vw); z-index: 30;
+    transform: translateX(-105%); transition: transform .2s ease; box-shadow: 0 0 32px rgba(0,0,0,.2);
+  }
+  body.nav-open .sidebar { transform: none; }
+  body.nav-open .scrim { display: block; position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 25; }
+  .menu-btn { display: inline-flex; }
+  .wrap { padding: 16px 16px 40px; }
+}
+
+/* ---------- masthead ---------- */
+.masthead {
+  position: relative; overflow: hidden;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 14px;
+  padding: 22px 22px 18px; margin-bottom: 16px;
+}
+.masthead::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 5px;
+  background: linear-gradient(90deg,
+    var(--logo-navy) 0 25%, var(--logo-teal) 25% 50%, var(--brand-gold) 50% 75%, var(--logo-red) 75% 100%);
+}
+.brand { display: flex; align-items: center; gap: 16px; min-width: 0; }
+.logo-tile {
+  flex: none; width: 64px; height: 76px; border-radius: 12px; background: #ffffff;
+  display: grid; place-items: center; box-shadow: inset 0 0 0 1px var(--border);
+}
+.logo-tile img { width: 46px; height: auto; display: block; }
+.org { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--org-ink); }
+.org .fr { font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em; }
+h1 { font-size: 26px; line-height: 1.15; margin: 3px 0 2px; letter-spacing: -0.015em; color: var(--brand-navy); }
+h1 .yr { color: var(--gold-ink); }
+.sub { color: var(--text-secondary); font-size: 13px; }
+
+.controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface-1); flex-wrap: wrap; }
+.seg button {
+  font: inherit; font-size: 13px; border: 0; background: none; color: var(--text-secondary);
+  padding: 6px 12px; cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--border); }
+.seg button[aria-pressed="true"] { background: var(--accent-bg); color: var(--text-primary); font-weight: 600; }
+.ctl-label { color: var(--text-muted); font-size: 12px; }
+.icon-btn {
+  font: inherit; font-size: 13px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer; align-items: center; gap: 6px;
+}
+[hidden] { display: none !important; }
+
+/* ---------- KPI tiles ---------- */
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.kpi { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+.kpi .k-label { color: var(--text-secondary); font-size: 12px; }
+.kpi .k-value { font-size: 26px; font-weight: 650; letter-spacing: -0.02em; margin: 2px 0; font-variant-numeric: tabular-nums; }
+.kpi .k-split { color: var(--text-muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+
+/* ---------- cards ---------- */
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 16px; min-width: 0; }
+.card.wide { grid-column: 1 / -1; }
+@media (max-width: 1100px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+
+.card-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 8px; flex-wrap: wrap; }
+.card h2, .card h3 { font-size: 15px; margin: 0; }
+.card .desc { color: var(--text-secondary); font-size: 12.5px; margin-top: 2px; }
+.card .src { color: var(--text-muted); font-size: 11.5px; margin-top: 10px; }
+.card .src a { color: var(--teal-ink); }
+.card-tools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.link-btn { font: inherit; font-size: 12px; background: none; border: 0; color: var(--text-secondary); text-decoration: underline; cursor: pointer; padding: 2px; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--text-secondary); margin: 4px 0 8px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+svg { display: block; width: 100%; height: auto; overflow: visible; }
+svg text { fill: var(--text-secondary); font-size: 11.5px; }
+svg .val { fill: var(--text-primary); font-variant-numeric: tabular-nums; }
+svg .axis { stroke: var(--grid); }
+.hit { fill: transparent; cursor: default; }
+.hit:hover { fill: var(--text-primary); fill-opacity: 0.04; }
+
+table.data { width: 100%; border-collapse: collapse; font-size: 12.5px; font-variant-numeric: tabular-nums; }
+table.data th, table.data td { padding: 6px 10px; border-bottom: 1px solid var(--grid); text-align: right; white-space: nowrap; }
+table.data th:first-child, table.data td:first-child { text-align: left; white-space: normal; min-width: 180px; }
+table.data th { color: var(--text-secondary); font-weight: 600; vertical-align: bottom; white-space: normal; }
+table.data tr.hrow td { background: var(--page); color: var(--text-primary); font-weight: 600; text-align: left; }
+table.data tr.ind td:first-child { padding-left: 26px; color: var(--text-secondary); }
+table.data tr.tot td { font-weight: 650; }
+table.data tbody tr:not(.hrow):hover td { background: var(--hover); }
+.tbl-wrap { overflow-x: auto; }
+
+#tip {
+  position: fixed; pointer-events: none; z-index: 40; opacity: 0; transition: opacity .08s;
+  background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,.12);
+  max-width: 280px;
+}
+#tip .t-title { font-weight: 600; margin-bottom: 4px; }
+#tip .t-row { display: flex; align-items: center; gap: 10px; justify-content: space-between; }
+#tip .t-row span:first-child { display: inline-flex; align-items: center; gap: 6px; color: var(--text-secondary); }
+#tip i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+#tip b { font-variant-numeric: tabular-nums; }
+
+.sel { font: inherit; font-size: 12.5px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); border-radius: 6px; padding: 4px 6px; }
+
+/* ---------- table pages ---------- */
+.crumbs { font-size: 12.5px; color: var(--text-muted); margin: 4px 2px 6px; }
+.crumbs a { color: var(--text-secondary); text-decoration: none; }
+.crumbs a:hover { text-decoration: underline; }
+.page-head { margin: 0 2px 14px; }
+.page-head h2 { font-size: 22px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+.page-head h2 .tcode { color: var(--teal-ink); margin-right: 8px; }
+.page-head p { color: var(--text-secondary); margin: 4px 0 0; max-width: 72ch; }
+.stack { display: grid; gap: 16px; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.pager a {
+  display: block; text-decoration: none; background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: 12px; padding: 12px 14px;
+}
+.pager a:hover { border-color: var(--s-urban); }
+.pager small { display: block; color: var(--text-muted); font-size: 11.5px; }
+.pager b { font-size: 13.5px; font-weight: 600; }
+.pager .next { text-align: right; grid-column: 2; }
+
+footer { color: var(--text-muted); font-size: 12px; margin-top: 24px; }
+
+@media (max-width: 560px) {
+  .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .kpi { padding: 10px 12px; }
+  .kpi .k-value { font-size: 21px; }
+  h1 { font-size: 21px; }
+  .masthead { padding: 18px 16px 14px; }
+  .brand { gap: 12px; align-items: flex-start; }
+  .logo-tile { width: 48px; height: 58px; border-radius: 10px; }
+  .logo-tile img { width: 34px; }
+  .org .fr { display: block; }
+  .org .dot, .ctl-label { display: none; }
+  .controls { gap: 8px; }
+  .page-head h2 { font-size: 19px; }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar" aria-label="Tables">
+    <a class="sb-brand" href="#overview">
+      <img id="sb-logo" alt="">
+      <div><b>LFS 2025 tables</b><span id="sb-count"></span></div>
+    </a>
+    <input class="sb-search" id="sb-search" type="search" placeholder="Search tables…" aria-label="Search tables">
+    <nav class="nav" id="nav"></nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <div class="wrap">
+      <header class="masthead">
+        <div class="brand">
+          <div class="logo-tile"><img id="logo" alt="Vanuatu Bureau of Statistics logo" src="data:image/png;base64,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"></div>
+          <div>
+            <div class="org">Vanuatu Bureau of Statistics <span class="fr"><span class="dot">· </span>Bureau des Statistiques du Vanuatu</span></div>
+            <h1>Labour Force Survey <span class="yr">2025</span></h1>
+            <div class="sub">Key indicators from tables T5.1–T30 · persons aged 15+ unless noted</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="icon-btn menu-btn" id="menu" aria-controls="sidebar">☰ Tables</button>
+          <span class="ctl-label overview-only">Compare by</span>
+          <div class="seg overview-only" id="lens">
+            <button data-v="sex" aria-pressed="true">Sex</button>
+            <button data-v="region" aria-pressed="false">Urban / Rural</button>
+          </div>
+          <button class="icon-btn" id="theme" title="Toggle light/dark">◐ Theme</button>
+        </div>
+      </header>
+
+      <main id="view"></main>
+
+      <footer>Source: Vanuatu Bureau of Statistics, Labour Force Survey 2025. Rebuild data with <code>python build_data.py</code>.</footer>
+    </div>
+  </div>
+</div>
+<div id="tip" role="tooltip"></div>
+
+<!-- LFS-DATA:START -->
+<script>
+// Generated by build_data.py from the LFS 2025 tables. Do not edit by hand.
+window.LFS = {"pyramid": [{"age": "0–4", "m": 22776, "f": 20778}, {"age": "5–9", "m": 23189, "f": 21723}, {"age": "10–14", "m": 23410, "f": 19521}, {"age": "15–19", "m": 16354, "f": 13678}, {"age": "20–24", "m": 12401, "f": 12752}, {"age": "25–29", "m": 13275, "f": 14405}, {"age": "30–34", "m": 12746, "f": 12867}, {"age": "35–39", "m": 10417, "f": 9764}, {"age": "40–44", "m": 8238, "f": 8563}, {"age": "45–49", "m": 8245, "f": 7780}, {"age": "50–54", "m": 7351, "f": 6915}, {"age": "55–60", "m": 5501, "f": 5878}, {"age": "60–64", "m": 4466, "f": 4275}, {"age": "65+", "m": 7988, "f": 8064}], "population": 343320, "popRegion": {"urban": 62393, "rural": 280926}, "workingAge": 211923, "lfStatus": [{"region": "National", "sex": "Male", "employed": 54947, "unemployed": 2543, "outside": 49493, "total": 106983}, {"region": "National", "sex": "Female", "employed": 45815, "unemployed": 2186, "outside": 56938, "total": 104939}, {"region": "Urban", "sex": "Male", "employed": 12644, "unemployed": 301, "outside": 7407, "total": 20352}, {"region": "Urban", "sex": "Female", "employed": 10960, "unemployed": 222, "outside": 9941, "total": 21123}, {"region": "Rural", "sex": "Male", "employed": 42304, "unemployed": 2242, "outside": 42085, "total": 86631}, {"region": "Rural", "sex": "Female", "employed": 34855, "unemployed": 1964, "outside": 46997, "total": 83816}], "lfpr": [{"label": "Total LFPR (%)", "m": 0.537, "f": 0.457, "u": 0.582, "r": 0.477, "t": 0.498}, {"label": "15–24", "m": 0.313, "f": 0.246, "u": 0.252, "r": 0.288, "t": 0.281}, {"label": "25–64", "m": 0.647, "f": 0.555, "u": 0.723, "r": 0.57, "t": 0.601}, {"label": "65+", "m": 0.383, "f": 0.301, "u": 0.403, "r": 0.331, "t": 0.342}, {"label": "Never Attended School", "m": 0.405, "f": 0.263, "u": 0.412, "r": 0.322, "t": 0.326}, {"label": "ECE & Kindergarten", "m": 0.61, "f": 0.483, "u": 0.638, "r": 0.543, "t": 0.548}, {"label": "Primary (Year 1 – Year 8)", "m": 0.53, "f": 0.454, "u": 0.605, "r": 0.475, "t": 0.493}, {"label": "Junior Secondary (Year 9 – Year 10)", "m": 0.512, "f": 0.471, "u": 0.544, "r": 0.474, "t": 0.491}, {"label": "Senior Secondary (Year 11 – Year 13/14)", "m": 0.563, "f": 0.503, "u": 0.548, "r": 0.523, "t": 0.531}, {"label": "Post Secondary Non-Tertiary", "m": 0.711, "f": 0.603, "u": 0.623, "r": 0.684, "t": 0.669}, {"label": "Tertiary", "m": 0.78, "f": 0.701, "u": 0.755, "r": 0.738, "t": 0.747}], "epr": [{"label": "Total EPR (%)", "m": 0.514, "f": 0.437, "u": 0.569, "r": 0.453, "t": 0.475}, {"label": "15–24", "m": 0.286, "f": 0.224, "u": 0.235, "r": 0.262, "t": 0.256}, {"label": "25–64", "m": 0.622, "f": 0.533, "u": 0.711, "r": 0.544, "t": 0.577}, {"label": "65+", "m": 0.377, "f": 0.296, "u": 0.403, "r": 0.324, "t": 0.336}, {"label": "Never Attended School", "m": 0.385, "f": 0.238, "u": 0.396, "r": 0.3, "t": 0.304}, {"label": "ECE & Kindergarten", "m": 0.585, "f": 0.457, "u": 0.622, "r": 0.517, "t": 0.523}, {"label": "Primary (Year 1 – Year 8)", "m": 0.507, "f": 0.436, "u": 0.596, "r": 0.452, "t": 0.473}, {"label": "Junior Secondary (Year 9 – Year 10)", "m": 0.478, "f": 0.443, "u": 0.535, "r": 0.436, "t": 0.46}, {"label": "Senior Secondary (Year 11 – Year 13/14)", "m": 0.539, "f": 0.48, "u": 0.53, "r": 0.496, "t": 0.508}, {"label": "Post Secondary Non-Tertiary", "m": 0.69, "f": 0.59, "u": 0.598, "r": 0.669, "t": 0.652}, {"label": "Tertiary", "m": 0.762, "f": 0.694, "u": 0.741, "r": 0.724, "t": 0.733}], "sector": [{"label": "Agriculture, Forestry and Fishing", "m": 14553, "f": 8855, "t": 23408}, {"label": "Manufacturing", "m": 2352, "f": 5024, "t": 7376}, {"label": "Construction", "m": 7437, "f": 239, "t": 7676}, {"label": "Mining and quarrying", "m": 87, "f": 13, "t": 100}, {"label": "Electricity, gas, steam and air conditioning", "m": 501, "f": 104, "t": 605}, {"label": "Water supply: sewerage, waste management", "m": 276, "f": 57, "t": 333}, {"label": "Wholesale and retail trade; repair of motor vehicles", "m": 10352, "f": 11654, "t": 22006}, {"label": "Transportation and storage", "m": 4249, "f": 508, "t": 4757}, {"label": "Accommodation and food service activities", "m": 3353, "f": 6046, "t": 9399}, {"label": "Information and communication", "m": 530, "f": 318, "t": 848}, {"label": "Financial and insurance activities", "m": 577, "f": 693, "t": 1270}, {"label": "Real estate activities", "m": 170, "f": 120, "t": 290}, {"label": "Professional, scientific and technical activities", "m": 827, "f": 499, "t": 1326}, {"label": "Administrative and support services", "m": 1333, "f": 660, "t": 1993}, {"label": "Public administration and defence", "m": 2187, "f": 1059, "t": 3246}, {"label": "Education", "m": 2593, "f": 3964, "t": 6557}, {"label": "Human health and social work activities", "m": 739, "f": 1147, "t": 1886}, {"label": "Arts, entertainment and recreation", "m": 517, "f": 821, "t": 1338}, {"label": "Other service activities", "m": 1426, "f": 1247, "t": 2673}, {"label": "Activities of households as employer", "m": 422, "f": 2528, "t": 2950}, {"label": "Activities of extraterritorial organisations and bodies", "m": 466, "f": 258, "t": 724}], "employed": 100762, "status": [{"label": "Employer", "m": 0.083, "f": 0.056, "u": 0.046, "r": 0.078, "t": 0.07}, {"label": "Own-account workers", "m": 0.248, "f": 0.333, "u": 0.171, "r": 0.322, "t": 0.287}, {"label": "Dependent contractors", "m": 0.139, "f": 0.183, "u": 0.041, "r": 0.195, "t": 0.159}, {"label": "Employees", "m": 0.491, "f": 0.398, "u": 0.734, "r": 0.361, "t": 0.449}, {"label": "Contributing family workers", "m": 0.039, "f": 0.03, "u": 0.008, "r": 0.044, "t": 0.035}], "risk": [{"label": "Workers in employment for profit", "m": 0.45, "f": 0.562, "u": 0.181, "r": 0.598, "t": 0.501}, {"label": "Workers in employment for pay", "m": 0.55, "f": 0.438, "u": 0.819, "r": 0.402, "t": 0.499}], "occupation": [{"label": "Armed forces occupation", "m": 316, "f": 86, "t": 402}, {"label": "Managers", "m": 2090, "f": 1159, "t": 3249}, {"label": "Professionals", "m": 4642, "f": 5548, "t": 10190}, {"label": "Technicians and associate professionals", "m": 2713, "f": 1357, "t": 4070}, {"label": "Clerical support workers", "m": 494, "f": 1111, "t": 1605}, {"label": "Service and sales workers", "m": 8185, "f": 13489, "t": 21674}, {"label": "Skilled agricultural, forestry and fisheries workers", "m": 14973, "f": 9272, "t": 24244}, {"label": "Craft and related trades workers", "m": 7448, "f": 5199, "t": 12646}, {"label": "Plant and machine operators, and assistants", "m": 4158, "f": 290, "t": 4447}, {"label": "Elementary occupations", "m": 9930, "f": 8305, "t": 18234}], "lu": [{"label": "LU1: Unemployment rate", "m": 0.044, "f": 0.046, "u": 0.022, "r": 0.052, "t": 0.045}, {"label": "LU2: Combined underemployment & unemployment", "m": 0.1122, "f": 0.12, "u": 0.036, "r": 0.14, "t": 0.116}, {"label": "LU3: Unemployment & potential labour force", "m": 0.178, "f": 0.193, "u": 0.076, "r": 0.214, "t": 0.185}, {"label": "LU4: Composite underutilisation", "m": 0.237, "f": 0.256, "u": 0.089, "r": 0.286, "t": 0.246}], "neet": {"m": 0.434, "f": 0.452, "t": 0.443, "u": 0.336, "r": 0.469}, "neetCompare": {"icls13": {"m": 0.281, "f": 0.303, "u": 0.349, "r": 0.277, "t": 0.291}, "icls19": {"m": 0.434, "f": 0.452, "u": 0.336, "r": 0.469, "t": 0.443}}, "informalRate": 0.585, "informal": {"age": [{"label": "15–24", "m": 0.756, "f": 0.722, "t": 0.741}, {"label": "25–64", "m": 0.54, "f": 0.563, "t": 0.551}, {"label": "65+", "m": 0.642, "f": 0.776, "t": 0.701}], "activity": [{"label": "Agriculture", "m": 0.857, "f": 0.933, "t": 0.886}, {"label": "Manufacturing", "m": 0.491, "f": 0.767, "t": 0.679}, {"label": "Construction", "m": 0.649, "f": 0.45, "t": 0.642}, {"label": "Mining and quarrying; Electricity, gas and water supply", "m": 0.257, "f": 0.337, "t": 0.271}, {"label": "Market Services", "m": 0.501, "f": 0.525, "t": 0.513}, {"label": "Non-market services", "m": 0.28, "f": 0.382, "t": 0.338}], "education": [{"label": "Never Attended School", "m": 0.326, "f": 0.222, "t": 0.269}, {"label": "ECE/Kindergarten", "m": 0.451, "f": 0.337, "t": 0.395}, {"label": "Primary (Year 1 – Year 8)", "m": 0.34, "f": 0.325, "t": 0.333}, {"label": "Junior Secondary (Year 9 – Year 10)", "m": 0.262, "f": 0.249, "t": 0.255}, {"label": "Senior Secondary (Year 11 – Year 13)", "m": 0.21, "f": 0.163, "t": 0.185}, {"label": "Post Secondary Non-Tertiary", "m": 0.296, "f": 0.167, "t": 0.246}, {"label": "Tertiary", "m": 0.131, "f": 0.095, "t": 0.116}], "status": [{"label": "Employers", "m": 0.554, "f": 0.577, "t": 0.562}, {"label": "Own-account workers", "m": 0.729, "f": 0.745, "t": 0.737}, {"label": "Dependent contractors", "m": 0.984, "f": 0.984, "t": 0.984}, {"label": "Employees", "m": 0.357, "f": 0.262, "t": 0.318}, {"label": "Contributing family workers", "m": 1, "f": 1, "t": 1}], "region": [{"label": "Urban", "m": 0.283, "f": 0.339, "t": 0.309}, {"label": "Rural", "m": 0.666, "f": 0.675, "t": 0.67}]}, "emigrationRate": 0.119, "tables": [{"id": "t5-1", "code": "T5.1", "group": "Population", "nav": "Population by age & sex", "title": "Population by age group and sex", "desc": "Total household population by five-year age group.", "header": ["Age Group", "Male", "Female", "Total"], "rows": [{"l": "0–4", "v": [22776, 20778, 43554], "f": "nnn"}, {"l": "5–9", "v": [23189, 21723, 44912], "f": "nnn"}, {"l": "10–14", "v": [23410, 19521, 42931], "f": "nnn"}, {"l": "15–19", "v": [16354, 13678, 30032], "f": "nnn"}, {"l": "20–24", "v": [12401, 12752, 25153], "f": "nnn"}, {"l": "25–29", "v": [13275, 14405, 27680], "f": "nnn"}, {"l": "30–34", "v": [12746, 12867, 25613], "f": "nnn"}, {"l": "35–39", "v": [10417, 9764, 20181], "f": "nnn"}, {"l": "40–44", "v": [8238, 8563, 16801], "f": "nnn"}, {"l": "45–49", "v": [8245, 7780, 16025], "f": "nnn"}, {"l": "50–54", "v": [7351, 6915, 14266], "f": "nnn"}, {"l": "55–60", "v": [5501, 5878, 11379], "f": "nnn"}, {"l": "60–64", "v": [4466, 4275, 8741], "f": "nnn"}, {"l": "65+", "v": [7988, 8064, 16052], "f": "nnn"}, {"l": "Total", "v": [176357, 166963, 343320], "f": "nnn"}], "chart": {"kind": "pyramid"}, "kpis": [{"label": "Total population", "v": 343320, "f": "n"}]}, {"id": "t5-2a", "code": "T5.2a", "group": "Population", "nav": "Educational attainment", "title": "Population by educational attainment and sex", "desc": "Highest level of education completed, population aged 16 and over.", "header": ["Educational Attainment", "Male", "Female", "Total"], "rows": [{"l": "Never Attended School", "v": [5964, 7342, 13306], "f": "nnn"}, {"l": "ECE/Kindergarten", "v": [9046, 8745, 17791], "f": "nnn"}, {"l": "Primary (Year 1 – Year 8)", "v": [45885, 43408, 89293], "f": "nnn"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [18673, 19832, 38505], "f": "nnn"}, {"l": "Senior Secondary (Year 11 – Year 13)", "v": [13902, 16088, 29990], "f": "nnn"}, {"l": "Post Secondary Non-Tertiary", "v": [4506, 2773, 7279], "f": "nnn"}, {"l": "Tertiary", "v": [5615, 4034, 9649], "f": "nnn"}, {"l": "Total", "v": [103591, 102222, 205813], "f": "nnn"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"]}, "kpis": [{"label": "Population 16+", "v": 205813, "f": "n"}]}, {"id": "t5-2b", "code": "T5.2b", "group": "Population", "nav": "Population by region", "title": "Population by urban / rural area and sex", "desc": "Total household population living in urban and rural areas.", "header": ["Region", "Male", "Female", "Total"], "rows": [{"l": "Urban", "v": [31330, 31063, 62393], "f": "nnn"}, {"l": "Rural", "v": [145028, 135898, 280926], "f": "nnn"}, {"l": "Total", "v": [176358, 166961, 343319], "f": "nnn"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"]}, "kpis": [{"label": "Urban", "v": 62393, "f": "n"}, {"label": "Rural", "v": 280926, "f": "n"}]}, {"id": "t6-1", "code": "T6.1", "group": "Population", "nav": "Working-age population", "title": "Working-age population by age group and sex", "desc": "Persons aged 15 and over — the population the labour force indicators are based on.", "header": ["Age Group", "Male", "Female", "Total"], "rows": [{"l": "15–24", "v": [28754, 26430, 55184], "f": "nnn"}, {"l": "25–64", "v": [70241, 70446, 140687], "f": "nnn"}, {"l": "65+", "v": [7988, 8064, 16052], "f": "nnn"}, {"l": "Working-age Total", "v": [106983, 104940, 211923], "f": "nnn"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["Total"]}, "kpis": [{"label": "Working-age population", "v": 211923, "f": "n"}]}, {"id": "t6-2", "code": "T6.2", "group": "Population", "nav": "Working-age by region", "title": "Working-age population by urban / rural area and sex", "desc": "Persons aged 15 and over living in urban and rural areas.", "header": ["Region", "Male", "Female", "Total"], "rows": [{"l": "Urban", "v": [20352, 21124, 41476], "f": "nnn"}, {"l": "Rural", "v": [86631, 83816, 170447], "f": "nnn"}, {"l": "Total", "v": [106983, 104940, 211923], "f": "nnn"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"]}, "kpis": []}, {"id": "t7", "code": "T7", "group": "Labour force", "nav": "Labour force status", "title": "Labour force status by region and sex", "desc": "Working-age population split into employed, unemployed and outside the labour force.", "header": ["Region", "Sex", "Employed", "Unemployed", "Outside LF", "Total Working-Age"], "rows": [{"l": "Total (National)", "v": ["Male", 54947, 2543, 49493, 106983], "f": "nnnnn"}, {"l": "Total (National)", "v": ["Female", 45815, 2186, 56938, 104939], "f": "nnnnn"}, {"l": "Urban", "v": ["Male", 12644, 301, 7407, 20352], "f": "nnnnn"}, {"l": "Urban", "v": ["Female", 10960, 222, 9941, 21123], "f": "nnnnn"}, {"l": "Rural", "v": ["Male", 42304, 2242, 42085, 86631], "f": "nnnnn"}, {"l": "Rural", "v": ["Female", 34855, 1964, 46997, 83816], "f": "nnnnn"}], "chart": {"kind": "lfstack"}, "kpis": []}, {"id": "t8", "code": "T8", "group": "Labour force", "nav": "Participation rate (LFPR)", "title": "Labour force participation rate", "desc": "Share of the working-age population that is employed or unemployed, by age and education.", "header": ["Category / Variable", "Male", "Female", "Urban", "Rural", "Total LFPR (%)"], "rows": [{"l": "Total LFPR (%)", "v": [0.537, 0.457, 0.582, 0.477, 0.498], "f": "ppppp"}, {"l": "15–24", "v": [0.313, 0.246, 0.252, 0.288, 0.281], "f": "ppppp"}, {"l": "25–64", "v": [0.647, 0.555, 0.723, 0.57, 0.601], "f": "ppppp"}, {"l": "65+", "v": [0.383, 0.301, 0.403, 0.331, 0.342], "f": "ppppp"}, {"l": "Never Attended School", "v": [0.405, 0.263, 0.412, 0.322, 0.326], "f": "ppppp"}, {"l": "ECE & Kindergarten", "v": [0.61, 0.483, 0.638, 0.543, 0.548], "f": "ppppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [0.53, 0.454, 0.605, 0.475, 0.493], "f": "ppppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [0.512, 0.471, 0.544, 0.474, 0.491], "f": "ppppp"}, {"l": "Senior Secondary (Year 11 – Year 13/14)", "v": [0.563, 0.503, 0.548, 0.523, 0.531], "f": "ppppp"}, {"l": "Post Secondary Non-Tertiary", "v": [0.711, 0.603, 0.623, 0.684, 0.669], "f": "ppppp"}, {"l": "Tertiary", "v": [0.78, 0.701, 0.755, 0.738, 0.747], "f": "ppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 2, "n": "Urban", "k": "u"}, {"c": 3, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 4, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "LFPR", "v": 0.498, "f": "p"}]}, {"id": "t9", "code": "T9", "group": "Labour force", "nav": "Employment-to-population", "title": "Employment-to-population ratio", "desc": "Share of the working-age population that is employed, by age and education.", "header": ["Category / Variable", "Male", "Female", "Urban", "Rural", "Total EPR (%)"], "rows": [{"l": "Total EPR (%)", "v": [0.514, 0.437, 0.569, 0.453, 0.475], "f": "ppppp"}, {"l": "15–24", "v": [0.286, 0.224, 0.235, 0.262, 0.256], "f": "ppppp"}, {"l": "25–64", "v": [0.622, 0.533, 0.711, 0.544, 0.577], "f": "ppppp"}, {"l": "65+", "v": [0.377, 0.296, 0.403, 0.324, 0.336], "f": "ppppp"}, {"l": "Never Attended School", "v": [0.385, 0.238, 0.396, 0.3, 0.304], "f": "ppppp"}, {"l": "ECE & Kindergarten", "v": [0.585, 0.457, 0.622, 0.517, 0.523], "f": "ppppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [0.507, 0.436, 0.596, 0.452, 0.473], "f": "ppppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [0.478, 0.443, 0.535, 0.436, 0.46], "f": "ppppp"}, {"l": "Senior Secondary (Year 11 – Year 13/14)", "v": [0.539, 0.48, 0.53, 0.496, 0.508], "f": "ppppp"}, {"l": "Post Secondary Non-Tertiary", "v": [0.69, 0.59, 0.598, 0.669, 0.652], "f": "ppppp"}, {"l": "Tertiary", "v": [0.762, 0.694, 0.741, 0.724, 0.733], "f": "ppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 2, "n": "Urban", "k": "u"}, {"c": 3, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 4, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "EPR", "v": 0.475, "f": "p"}]}, {"id": "t10", "code": "T10", "group": "Employment", "nav": "Employment by sector", "title": "Employment by economic sector and sex", "desc": "Employed persons by industry (ISIC). Indented rows in the table are breakdowns of the row above.", "header": ["Economic Sector", "Male", "Female", "Total", "Male_proportion", "Female_proportion", "Proportion_Total"], "rows": [{"l": "Agriculture, Forestry and Fishing", "v": [14553, 8855, 23408, 0.265, 0.193, 0.232], "f": "nnnppp"}, {"l": "Manufacturing", "v": [2352, 5024, 7376, 0.043, 0.11, 0.073], "f": "nnnppp"}, {"l": "Construction", "v": [7437, 239, 7676, 0.135, 0.005, 0.076], "f": "nnnppp"}, {"l": "Mining and quarrying", "v": [87, 13, 100, 0.002, 0, 0.001], "f": "nnnppp"}, {"l": "Electricity, gas, steam and air conditioning", "v": [501, 104, 605, 0.009, 0.002, 0.006], "f": "nnnppp"}, {"l": "Water supply: sewerage, waste management", "v": [276, 57, 333, 0.005, 0.001, 0.003], "f": "nnnppp"}, {"l": "Wholesale and retail trade; repair of motor vehicles", "v": [10352, 11654, 22006, 0.188, 0.254, 0.218], "f": "nnnppp"}, {"l": "Retail Trade or Retail Trade excluding motor vehicles", "v": [3589, 7722, 11310, 0.065, 0.169, 0.112], "f": "nnnppp", "i": 1}, {"l": "Wholesale trade excluding motor vehicles or Other wholesale trade", "v": [5631, 3780, 9411, 0.102, 0.083, 0.093], "f": "nnnppp", "i": 1}, {"l": "Wholesale, retail trade and repair of motor vehicles", "v": [1132, 152, 1284, 0.021, 0.003, 0.013], "f": "nnnppp", "i": 1}, {"l": "Transportation and storage", "v": [4249, 508, 4757, 0.077, 0.011, 0.047], "f": "nnnppp"}, {"l": "Accommodation and food service activities", "v": [3353, 6046, 9399, 0.061, 0.132, 0.093], "f": "nnnppp"}, {"l": "Accommodation activities", "v": [1367, 1843, 3211, 0.025, 0.04, 0.03186], "f": "nnnppp", "i": 1}, {"l": "Food service activities", "v": [1986, 4203, 6188, 0.036, 0.092, 0.061], "f": "nnnppp", "i": 1}, {"l": "Information and communication", "v": [530, 318, 848, 0.01, 0.007, 0.008], "f": "nnnppp"}, {"l": "Financial and insurance activities", "v": [577, 693, 1270, 0.01, 0.015, 0.013], "f": "nnnppp"}, {"l": "Real estate activities", "v": [170, 120, 290, 0.003, 0.003, 0.003], "f": "nnnppp"}, {"l": "Professional, scientific and technical activities", "v": [827, 499, 1326, 0.015, 0.011, 0.013], "f": "nnnppp"}, {"l": "Administrative and support services", "v": [1333, 660, 1993, 0.024, 0.014, 0.02], "f": "nnnppp"}, {"l": "Public administration and defence", "v": [2187, 1059, 3246, 0.04, 0.023, 0.03221], "f": "nnnppp"}, {"l": "Education", "v": [2593, 3964, 6557, 0.047, 0.087, 0.065], "f": "nnnppp"}, {"l": "Human health and social work activities", "v": [739, 1147, 1886, 0.013, 0.025, 0.019], "f": "nnnppp"}, {"l": "Arts, entertainment and recreation", "v": [517, 821, 1338, 0.009, 0.018, 0.013], "f": "nnnppp"}, {"l": "Other service activities", "v": [1426, 1247, 2673, 0.026, 0.027, 0.027], "f": "nnnppp"}, {"l": "Activities of households as employer", "v": [422, 2528, 2950, 0.008, 0.055, 0.029], "f": "nnnppp"}, {"l": "Activities of extraterritorial organisations and bodies", "v": [466, 258, 724, 0.008, 0.006, 0.007], "f": "nnnppp"}, {"l": "Total", "v": [54947, 45815, 100762, 1.0, 1.0, 1.0], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"], "sort": true}, "kpis": [{"label": "Total employed", "v": 100762, "f": "n"}]}, {"id": "t11", "code": "T11", "group": "Employment", "nav": "Status in employment (ICSE-18)", "title": "Employment by status in employment (ICSE-18)", "desc": "Independent versus dependent workers, as a share of each group's employed persons.", "header": ["Status in Employment", "Male", "Male_proportion", "Female", "Female_proportion", "Urban", "Urban_proportion", "Rural", "Rural_proportion", "Total", "Total_proportion"], "rows": [{"l": "Independent workers", "v": [18178, 0.331, 17799, 0.388, 5135, 0.218, 30842, 0.4, 35977, 0.357], "f": "npnpnpnpnp"}, {"l": "Dependent workers", "v": [36769, 0.669, 28016, 0.612, 18469, 0.782, 46316, 0.6, 64785, 0.643], "f": "npnpnpnpnp"}, {"l": "Total", "v": [54947, 1, 45815, 1, 23604, 1, 77158, 1, 100762, 1], "f": "npnpnpnpnp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 1, "n": "Male", "k": "m"}, {"c": 3, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 5, "n": "Urban", "k": "u"}, {"c": 7, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t12", "code": "T12", "group": "Employment", "nav": "ICSE-18-A categories", "title": "Employment by ICSE-18-A category", "desc": "Employers, own-account workers, dependent contractors, employees and contributing family workers.", "header": ["Status in Employment", "Male", "Male_proportion", "Female", "Female_proportion", "Urban", "Urban_proportion", "Rural", "Rural_proportion", "Total", "Total_proportion"], "rows": [{"l": "A. Employer", "v": [4559, 0.083, 2544, 0.056, 1097, 0.046, 6006, 0.078, 7103, 0.07], "f": "npnpnpnpnp"}, {"l": "B. Own-account workers", "v": [13620, 0.248, 15254, 0.333, 4038, 0.171, 24836, 0.322, 28874, 0.287], "f": "npnpnpnpnp"}, {"l": "C. Dependent contractors", "v": [7644, 0.139, 8390, 0.183, 962, 0.041, 15072, 0.195, 16034, 0.159], "f": "npnpnpnpnp"}, {"l": "D. Employees", "v": [26976, 0.491, 18230, 0.398, 17327, 0.734, 27879, 0.361, 45206, 0.449], "f": "npnpnpnpnp"}, {"l": "E. Contributing family workers", "v": [2149, 0.039, 1396, 0.03, 180, 0.008, 3366, 0.044, 3545, 0.035], "f": "npnpnpnpnp"}, {"l": "Total", "v": [54947, 1, 45815, 1, 23604, 1, 77158, 1, 100762, 1], "f": "npnpnpnpnp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 1, "n": "Male", "k": "m"}, {"c": 3, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 5, "n": "Urban", "k": "u"}, {"c": 7, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t13", "code": "T13", "group": "Employment", "nav": "Detailed ICSE-18-A status", "title": "Employment by detailed ICSE-18-A status", "desc": "The eleven detailed status-in-employment groups, as a share of each group's employed persons.", "header": ["Status in Employment", "Male", "Male_proportion", "Female", "Female_proportion", "Urban", "Urban_proportion", "Rural", "Rural_proportion", "Total", "Total_proportion"], "rows": [{"l": "11 Employers in corporations", "v": [1204, 0.022, 312, 0.007, 699, 0.03, 817, 0.011, 1516, 0.015], "f": "npnpnpnpnp"}, {"l": "12 Employers in household market enterprises", "v": [3354, 0.061, 2232, 0.049, 398, 0.017, 5188, 0.067, 5587, 0.055], "f": "npnpnpnpnp"}, {"l": "21 Owner-operators of corporations without employees", "v": [2056, 0.037, 1532, 0.033, 1300, 0.055, 2287, 0.03, 3587, 0.036], "f": "npnpnpnpnp"}, {"l": "22 Own-account workers in household market enterprises without employees", "v": [11564, 0.21, 13723, 0.3, 2737, 0.116, 22549, 0.292, 25286, 0.251], "f": "npnpnpnpnp"}, {"l": "30 Dependent contractors", "v": [7644, 0.139, 8390, 0.183, 962, 0.041, 15072, 0.195, 16034, 0.159], "f": "npnpnpnpnp"}, {"l": "41 Permanent employees", "v": [13002, 0.237, 9927, 0.217, 8552, 0.362, 14377, 0.186, 22929, 0.228], "f": "npnpnpnpnp"}, {"l": "42 Fixed-term employees", "v": [5028, 0.092, 2565, 0.056, 2880, 0.122, 4714, 0.061, 7593, 0.075], "f": "npnpnpnpnp"}, {"l": "43 Short-term and casual employees", "v": [1909, 0.035, 870, 0.019, 428, 0.018, 2351, 0.03, 2779, 0.028], "f": "npnpnpnpnp"}, {"l": "44 Paid apprentices, trainees and interns", "v": [399, 0.007, 123, 0.003, 72, 0.003, 450, 0.006, 522, 0.005], "f": "npnpnpnpnp"}, {"l": "49 Employees not elsewhere classified", "v": [6638, 0.121, 4745, 0.104, 5395, 0.229, 5988, 0.078, 11383, 0.113], "f": "npnpnpnpnp"}, {"l": "51 Contributing family workers", "v": [2149, 0.039, 1396, 0.03, 180, 0.008, 3366, 0.044, 3545, 0.035], "f": "npnpnpnpnp"}, {"l": "Total", "v": [54947, 1, 45815, 1, 23604, 1, 77158, 1, 100762, 1], "f": "npnpnpnpnp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 1, "n": "Male", "k": "m"}, {"c": 3, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 5, "n": "Urban", "k": "u"}, {"c": 7, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t14", "code": "T14", "group": "Employment", "nav": "Economic risk (ICSE-18-R)", "title": "Employment by type of economic risk (ICSE-18-R)", "desc": "Workers in employment for profit versus for pay.", "header": ["Status in Employment", "Male Headcount", "Female Headcount", "Urban Headcount", "Rural Headcount", "Total Headcount", "Male %", "Female %", "Urban %", "Rural %", "Total %"], "rows": [{"l": "Workers in employment for profit", "v": [24711, 25741, 4277, 46175, 50453, 0.45, 0.562, 0.181, 0.598, 0.501], "f": "nnnnnppppp"}, {"l": "Workers in employment for pay", "v": [30236, 20074, 19327, 30983, 50310, 0.55, 0.438, 0.819, 0.402, 0.499], "f": "nnnnnppppp"}, {"l": "Total", "v": [54947, 45815, 23604, 77158, 100762, 1, 1, 1, 1, 1], "f": "nnnnnppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 5, "n": "Male", "k": "m"}, {"c": 6, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 7, "n": "Urban", "k": "u"}, {"c": 8, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t15", "code": "T15", "group": "Employment", "nav": "Risk & authority", "title": "Employment by economic risk and type of authority", "desc": "ICSE-18-R groups broken down by the worker's relationship to the economic unit.", "header": ["Status in Employment", "Male Headcount", "Female Headcount", "Urban Headcount", "Rural Headcount", "Total Headcount", "Male %", "Female %", "Urban %", "Rural %", "Total %"], "rows": [{"l": "Workers in employment for Profit", "v": [24711, 25741, 4277, 46175, 50453, 0.45, 0.562, 0.181, 0.598, 0.501], "f": "nnnnnppppp"}, {"l": "F. Independent workers in household market enterprises", "v": [14918, 15955, 3135, 27738, 30873, 0.272, 0.348, 0.133, 0.359, 0.306], "f": "nnnnnppppp"}, {"l": "C. Dependent contractors", "v": [7644, 8390, 962, 15072, 16034, 0.139, 0.183, 0.041, 0.195, 0.159], "f": "nnnnnppppp"}, {"l": "E. Contributing family workers", "v": [2149, 1396, 180, 3366, 3545, 0.039, 0.03, 0.008, 0.044, 0.035], "f": "nnnnnppppp"}, {"l": "Workers in employment for Pay", "v": [30236, 20074, 19327, 30983, 50310, 0.55, 0.438, 0.819, 0.402, 0.499], "f": "nnnnnppppp"}, {"l": "G. Owner-operators of corporations", "v": [3260, 1844, 1999, 3105, 5104, 0.059, 0.04, 0.085, 0.04, 0.051], "f": "nnnnnppppp"}, {"l": "C. Employees", "v": [26976, 18230, 17327, 27879, 45206, 0.491, 0.398, 0.734, 0.361, 0.449], "f": "nnnnnppppp"}, {"l": "Total", "v": [54947, 45815, 23604, 77158, 100762, 1, 1, 1, 1, 1], "f": "nnnnnppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 5, "n": "Male", "k": "m"}, {"c": 6, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 7, "n": "Urban", "k": "u"}, {"c": 8, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t16", "code": "T16", "group": "Employment", "nav": "Occupation (ISCO)", "title": "Employment by occupation (ISCO major groups)", "desc": "Employed persons by major occupation group.", "header": ["Occupation", "Male Headcount", "Female Headcount", "Total Headcount", "Male %", "Female %", "Total %"], "rows": [{"l": "Armed forces occupation", "v": [316, 86, 402, 0.006, 0.002, 0.004], "f": "nnnppp"}, {"l": "Managers", "v": [2090, 1159, 3249, 0.038, 0.025, 0.032], "f": "nnnppp"}, {"l": "Professionals", "v": [4642, 5548, 10190, 0.084, 0.121, 0.101], "f": "nnnppp"}, {"l": "Technicians and associate professionals", "v": [2713, 1357, 4070, 0.049, 0.03, 0.04], "f": "nnnppp"}, {"l": "Clerical support workers", "v": [494, 1111, 1605, 0.009, 0.024, 0.016], "f": "nnnppp"}, {"l": "Service and sales workers", "v": [8185, 13489, 21674, 0.149, 0.294, 0.215], "f": "nnnppp"}, {"l": "Skilled agricultural, forestry and fisheries workers", "v": [14973, 9272, 24244, 0.272, 0.202, 0.241], "f": "nnnppp"}, {"l": "Craft and related trades workers", "v": [7448, 5199, 12646, 0.136, 0.113, 0.126], "f": "nnnppp"}, {"l": "Plant and machine operators, and assistants", "v": [4158, 290, 4447, 0.076, 0.006, 0.044], "f": "nnnppp"}, {"l": "Elementary occupations", "v": [9930, 8305, 18234, 0.181, 0.181, 0.181], "f": "nnnppp"}, {"l": "Total", "v": [54947, 45815, 100762, 1, 1, 1], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"], "sort": true}, "kpis": []}, {"id": "t17", "code": "T17", "group": "Underutilisation", "nav": "Labour underutilisation", "title": "Labour underutilisation (LU1–LU4)", "desc": "Unemployment, time-related underemployment and the potential labour force, as rates of the (extended) labour force.", "header": ["Indicator", "Male", "Female", "Total (Sex)", "Urban", "Rural", "Total (Region)"], "rows": [{"l": "Time-related underemployment", "v": [3905, 3580, 7485, 334, 7151, 7485], "f": "nnnnnn"}, {"l": "Unemployment", "v": [2543, 2186, 4729, 523, 4206, 4729], "f": "nnnnnn"}, {"l": "Potential labour force", "v": [9368, 8789, 18157, 1411, 16746, 18157], "f": "nnnnnn"}, {"l": "Extended labour force", "v": [66859, 56790, 123649, 25538, 98110, 123648], "f": "nnnnnn"}, {"l": "LU1: Unemployment rate", "v": [0.044, 0.046, 0.045, 0.022, 0.052, 0.045], "f": "pppppp"}, {"l": "LU2: Combined underemployment & unemployment", "v": [0.1122, 0.12, 0.116, 0.036, 0.14, 0.116], "f": "pppppp"}, {"l": "LU3: Unemployment & potential labour force", "v": [0.178, 0.193, 0.185, 0.076, 0.214, 0.185], "f": "pppppp"}, {"l": "LU4: Composite underutilisation", "v": [0.237, 0.256, 0.246, 0.089, 0.286, 0.246], "f": "pppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 3, "n": "Urban", "k": "u"}, {"c": 4, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "p", "only": ["^LU"]}, "kpis": [{"label": "Unemployment rate (LU1)", "v": 0.045, "f": "p"}, {"label": "Composite rate (LU4)", "v": 0.246, "f": "p"}]}, {"id": "t18", "code": "T18", "group": "Underutilisation", "nav": "Outside the labour force", "title": "Persons outside the labour force", "desc": "Working-age persons neither employed nor unemployed, by age group and educational attainment.", "header": ["Outside the LF / Category", "Male Headcount", "Female Headcount", "Urban Headcount", "Rural Headcount", "Total Headcount", "Male %", "Female %", "Urban %", "Rural %", "Total %"], "rows": [{"l": "Total Outside the Labour Force", "v": [49493, 56938, 17349, 89082, 106431, 0.4626, 0.5426, 0.4183, 0.5226, 0.5022], "f": "nnnnnppppp"}, {"l": "By age group", "h": 1}, {"l": "15–24", "v": [19744, 19938, 8052, 31630, 39682, 0.6866, 0.7544, 0.4641, 0.3551, 0.3728], "f": "nnnnnppppp"}, {"l": "25–64", "v": [24823, 31368, 7814, 48377, 56191, 0.3534, 0.4453, 0.4504, 0.5431, 0.528], "f": "nnnnnppppp"}, {"l": "65+", "v": [4926, 5633, 1483, 9076, 10559, 0.6167, 0.6985, 0.0855, 0.1019, 0.0992], "f": "nnnnnppppp"}, {"l": "Educational Attainment (16+)", "h": 1}, {"l": "Never Attended School", "v": [3570, 5407, 323, 8653, 8977, 0.6036, 0.7339, 0.0186, 0.0971, 0.0843], "f": "nnnnnppppp"}, {"l": "ECE & Kindergarten", "v": [3594, 4601, 351, 7844, 8195, 0.4019, 0.536, 0.0202, 0.0881, 0.077], "f": "nnnnnppppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [21625, 23775, 5000, 40400, 45401, 0.4727, 0.5496, 0.2882, 0.4535, 0.4266], "f": "nnnnnppppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [9030, 10513, 4317, 15227, 19544, 0.4791, 0.5318, 0.2488, 0.1709, 0.1836], "f": "nnnnnppppp"}, {"l": "Senior Secondary (Year 11 – Year 13/14)", "v": [6017, 7883, 4402, 9498, 13900, 0.4296, 0.4836, 0.2537, 0.1066, 0.1306], "f": "nnnnnppppp"}, {"l": "Post Secondary Non-Tertiary", "v": [1292, 1072, 684, 1680, 2363, 0.2856, 0.3799, 0.0394, 0.0189, 0.0222], "f": "nnnnnppppp"}, {"l": "Tertiary", "v": [1270, 1218, 1316, 1172, 2488, 0.228, 0.3031, 0.0758, 0.0132, 0.0234], "f": "nnnnnppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 2, "n": "Urban", "k": "u"}, {"c": 3, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 4, "n": "Total", "k": "t"}]}], "fmt": "n"}, "kpis": [{"label": "Outside the labour force", "v": 106431, "f": "n"}]}, {"id": "t19", "code": "T19", "group": "Underutilisation", "nav": "Youth NEET rate", "title": "Youth not in employment, education or training (NEET)", "desc": "Young people aged 15–24 by activity, and the NEET rate (19th ICLS definition).", "header": ["Indicator", "Male", "Female", "Total Sex", "Urban", "Rural", "Total Region"], "rows": [{"l": "Youth population (15–24 years)", "v": [28754, 26430, 55184, 10759, 44425, 55184], "f": "nnnnnn"}, {"l": "Youth in employment", "v": [8234, 5917, 14151, 2528, 11623, 14151], "f": "nnnnnn"}, {"l": "Youth in education or training", "v": [10635, 10664, 21299, 5980, 15319, 21299], "f": "nnnnnn"}, {"l": "Youth in employment and education", "v": [1798, 1930, 3728, 1020, 2708, 3728], "f": "nnnnnn"}, {"l": "Youth NEET (number)", "v": [12489, 11958, 24447, 3610, 20837, 24447], "f": "nnnnnn"}, {"l": "Youth NEET rate (%)", "v": [0.434, 0.452, 0.443, 0.336, 0.469, 0.443], "f": "pppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 3, "n": "Urban", "k": "u"}, {"c": 4, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "n", "skip": ["rate", "population"]}, "kpis": [{"label": "Youth NEET rate", "v": 0.443, "f": "p"}, {"label": "Youth NEET", "v": 24447, "f": "n"}]}, {"id": "t20", "code": "T20", "group": "Underutilisation", "nav": "NEET: 13th vs 19th ICLS", "title": "Youth NEET rate: 13th versus 19th ICLS definitions", "desc": "The 19th ICLS work definition excludes own-use production, so more young people are counted as NEET.", "header": ["Group", "Youth population (15–24)", "13th ICLS NEET (number)", "13th ICLS NEET rate (%)", "19th ICLS NEET (number)", "19th ICLS NEET rate (%)"], "rows": [{"l": "Male", "v": [28754, 8068, 0.281, 12489, 0.434], "f": "nnpnp"}, {"l": "Female", "v": [26430, 8015, 0.303, 11958, 0.452], "f": "nnpnp"}, {"l": "Urban", "v": [10759, 3758, 0.349, 3610, 0.336], "f": "nnpnp"}, {"l": "Rural", "v": [44425, 12325, 0.277, 20837, 0.469], "f": "nnpnp"}, {"l": "Total", "v": [55184, 16083, 0.291, 24447, 0.443], "f": "nnpnp"}], "chart": {"sets": [{"name": "NEET rate", "series": [{"c": 2, "n": "13th ICLS", "k": "old"}, {"c": 4, "n": "19th ICLS", "k": "new"}]}, {"name": "NEET number", "series": [{"c": 1, "n": "13th ICLS", "k": "old"}, {"c": 3, "n": "19th ICLS", "k": "new"}]}], "fmt": "p"}, "kpis": [{"label": "NEET rate, 13th ICLS", "v": 0.291, "f": "p"}, {"label": "NEET rate, 19th ICLS", "v": 0.443, "f": "p"}]}, {"id": "t21", "code": "T21", "group": "Informality", "nav": "Informal employment", "title": "Informal employment", "desc": "Share of employed persons in informal jobs, by sector, age, activity, education, status and region.", "header": ["Occupation / Category", "Male", "Female", "Total", "Male %", "Female %", "Total %"], "rows": [{"l": "Total informal employment", "v": [31742, 27254, 58996, 0.578, 0.595, 0.585], "f": "nnnppp"}, {"l": "By sector", "h": 1}, {"l": "Formal sector", "v": [5937, 3536, 9473, 0.204, 0.16, 0.185], "f": "nnnppp"}, {"l": "Informal sector", "v": [20796, 20967, 41763, 1, 1, 1], "f": "nnnppp"}, {"l": "Household sector", "v": [5009, 2751, 7760, 1, 1, 1], "f": "nnnppp"}, {"l": "By age group", "h": 1}, {"l": "15–24", "v": [6221, 4269, 10490, 0.756, 0.722, 0.741], "f": "nnnppp"}, {"l": "25–64", "v": [23589, 21135, 44724, 0.54, 0.563, 0.551], "f": "nnnppp"}, {"l": "65+", "v": [1932, 1850, 3782, 0.642, 0.776, 0.701], "f": "nnnppp"}, {"l": "By economic activity", "h": 1}, {"l": "Agriculture", "v": [12477, 8265, 20742, 0.857, 0.933, 0.886], "f": "nnnppp"}, {"l": "Manufacturing", "v": [1154, 3854, 5008, 0.491, 0.767, 0.679], "f": "nnnppp"}, {"l": "Construction", "v": [4823, 108, 4931, 0.649, 0.45, 0.642], "f": "nnnppp"}, {"l": "Mining and quarrying; Electricity, gas and water supply", "v": [222, 59, 281, 0.257, 0.337, 0.271], "f": "nnnppp"}, {"l": "Market Services", "v": [10726, 10756, 21482, 0.501, 0.525, 0.513], "f": "nnnppp"}, {"l": "Non-market services", "v": [2340, 4212, 6552, 0.28, 0.382, 0.338], "f": "nnnppp"}, {"l": "Educational Attainment (16+)", "h": 1}, {"l": "Never Attended School", "v": [1930, 1637, 3568, 0.326, 0.222, 0.269], "f": "nnnppp"}, {"l": "ECE/Kindergarten", "v": [4032, 2890, 6922, 0.451, 0.337, 0.395], "f": "nnnppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [15558, 14070, 29627, 0.34, 0.325, 0.333], "f": "nnnppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [4936, 4915, 9851, 0.262, 0.249, 0.255], "f": "nnnppp"}, {"l": "Senior Secondary (Year 11 – Year 13)", "v": [2946, 2661, 5608, 0.21, 0.163, 0.185], "f": "nnnppp"}, {"l": "Post Secondary Non-Tertiary", "v": [1338, 472, 1810, 0.296, 0.167, 0.246], "f": "nnnppp"}, {"l": "Tertiary", "v": [728, 383, 1111, 0.131, 0.095, 0.116], "f": "nnnppp"}, {"l": "By status in employment (ICSE-18-A)", "h": 1}, {"l": "Employers", "v": [2525, 1469, 3993, 0.554, 0.577, 0.562], "f": "nnnppp"}, {"l": "Own-account workers", "v": [9929, 11363, 21292, 0.729, 0.745, 0.737], "f": "nnnppp"}, {"l": "Dependent contractors", "v": [7521, 8253, 15774, 0.984, 0.984, 0.984], "f": "nnnppp"}, {"l": "Employees", "v": [9618, 4773, 14391, 0.357, 0.262, 0.318], "f": "nnnppp"}, {"l": "Contributing family workers", "v": [2149, 1396, 3545, 1, 1, 1], "f": "nnnppp"}, {"l": "By main region", "h": 1}, {"l": "Urban", "v": [3581, 3711, 7292, 0.283, 0.339, 0.309], "f": "nnnppp"}, {"l": "Rural", "v": [28161, 23543, 51704, 0.666, 0.675, 0.67], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 3, "n": "Male", "k": "m"}, {"c": 4, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 5, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "Informal employment rate", "v": 0.585, "f": "p"}, {"label": "Informally employed", "v": 58996, "f": "n"}]}, {"id": "t22", "code": "T22", "group": "Informality", "nav": "Informal sector", "title": "Employment in the informal sector", "desc": "Share of employed persons working in informal-sector enterprises.", "header": ["Occupation / Category", "Male", "Female", "Total", "Male %", "Female %", "Total %"], "rows": [{"l": "Total employed in informal sector", "v": [20796, 20967, 41763, 0.378, 0.458, 0.414], "f": "nnnppp"}, {"l": "By age group", "h": 1}, {"l": "15–24", "v": [3685, 2833, 6518, 0.448, 0.479, 0.461], "f": "nnnppp"}, {"l": "25–64", "v": [15666, 16514, 32179, 0.358, 0.44, 0.396], "f": "nnnppp"}, {"l": "65+", "v": [1446, 1620, 3066, 0.48, 0.68, 0.568], "f": "nnnppp"}, {"l": "By economic activity", "h": 1}, {"l": "Agriculture", "v": [10565, 7439, 18004, 0.726, 0.84, 0.769], "f": "nnnppp"}, {"l": "Manufacturing", "v": [651, 3518, 4170, 0.277, 0.7, 0.565], "f": "nnnppp"}, {"l": "Construction", "v": [1823, 25, 1848, 0.245, 0.105, 0.241], "f": "nnnppp"}, {"l": "Mining and quarrying; Electricity, gas and water supply", "v": [63, 59, 121, 0.072, 0.337, 0.117], "f": "nnnppp"}, {"l": "Market Services", "v": [6807, 8190, 14997, 0.318, 0.4, 0.358], "f": "nnnppp"}, {"l": "Non-market services", "v": [887, 1737, 2624, 0.106, 0.158, 0.135], "f": "nnnppp"}, {"l": "By status in employment (ICSE-18-A)", "h": 1}, {"l": "Employers", "v": [2525, 1469, 3993, 0.554, 0.577, 0.562], "f": "nnnppp"}, {"l": "Own-account workers", "v": [9929, 11363, 21292, 0.729, 0.745, 0.737], "f": "nnnppp"}, {"l": "Dependent contractors", "v": [6451, 7002, 13453, 0.844, 0.835, 0.839], "f": "nnnppp"}, {"l": "Contributing family workers", "v": [1892, 1134, 3025, 0.88, 0.812, 0.853], "f": "nnnppp"}, {"l": "By main region", "h": 1}, {"l": "Urban", "v": [927, 2240, 3168, 0.073, 0.204, 0.134], "f": "nnnppp"}, {"l": "Rural", "v": [19869, 18727, 38596, 0.47, 0.537, 0.5], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 3, "n": "Male", "k": "m"}, {"c": 4, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 5, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "Informal sector share", "v": 0.414, "f": "p"}, {"label": "Employed in informal sector", "v": 41763, "f": "n"}]}, {"id": "t23", "code": "T23", "group": "Hours & earnings", "nav": "Hours worked", "title": "Employed persons by hours actually worked per week", "desc": "Distribution of employed persons across weekly hours bands, as a share of each group.", "header": ["Hours Worked / Category", "Male Headcount", "Female Headcount", "Total Sex Headcount", "Urban Headcount", "Rural Headcount", "Total Area Headcount", "Male %", "Female %", "Total Sex %", "Urban %", "Rural %", "Total Area %"], "rows": [{"l": "Total Employed", "v": [54947, 45815, 100762, 23604, 77158, 100762, 1, 1, 1, 1, 1, 1], "f": "nnnnnnpppppp"}, {"l": "No hours actually", "v": [2149, 1298, 3446, 598, 2848, 3446, 0.039, 0.028, 0.034, 0.006, 0.028, 0.034], "f": "nnnnnnpppppp"}, {"l": "01 to 14", "v": [19998, 18755, 38753, 2931, 35822, 38753, 0.364, 0.409, 0.385, 0.029, 0.356, 0.385], "f": "nnnnnnpppppp"}, {"l": "15 to 29", "v": [6528, 6839, 13368, 2200, 11168, 13368, 0.119, 0.149, 0.133, 0.022, 0.111, 0.133], "f": "nnnnnnpppppp"}, {"l": "30 to 34", "v": [1714, 1580, 3294, 710, 2584, 3294, 0.031, 0.034, 0.033, 0.007, 0.026, 0.033], "f": "nnnnnnpppppp"}, {"l": "35 to 39", "v": [1511, 1509, 3020, 1029, 1991, 3020, 0.027, 0.033, 0.03, 0.01, 0.02, 0.03], "f": "nnnnnnpppppp"}, {"l": "40 to 48", "v": [18696, 13366, 32063, 13632, 18431, 32063, 0.34, 0.292, 0.318, 0.135, 0.183, 0.318], "f": "nnnnnnpppppp"}, {"l": "49 plus", "v": [3989, 2324, 6314, 2457, 3857, 6314, 0.073, 0.051, 0.063, 0.024, 0.038, 0.063], "f": "nnnnnnpppppp"}, {"l": "Don't know / Missing", "v": [361, 144, 505, 46, 459, 505, 0.007, 0.003, 0.005, 0, 0.005, 0.005], "f": "nnnnnnpppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 0, "n": "Male", "k": "m"}, {"c": 1, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 3, "n": "Urban", "k": "u"}, {"c": 4, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 2, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total Employed$"], "normalize": "Total Employed"}, "kpis": []}, {"id": "t24", "code": "T24", "group": "Hours & earnings", "nav": "Monthly wage", "title": "Employees by monthly wage band", "desc": "Monthly cash wage of employees (Vatu), as a share of each group.", "header": ["Wage Category", "Male Headcount", "Female Headcount", "Urban Headcount", "Rural Headcount", "Total Headcount", "Male %", "Female %", "Urban %", "Rural %", "Total %"], "rows": [{"l": "Total", "v": [26316, 17962, 17159, 27119, 44278, 1, 1, 1, 1, 1], "f": "nnnnnppppp"}, {"l": "0 – VT 4,999", "v": [570, 258, 68, 761, 829, 0.022, 0.014, 0.004, 0.028, 0.019], "f": "nnnnnppppp"}, {"l": "VT 5,000 – VT 9,999", "v": [782, 583, 223, 1141, 1364, 0.03, 0.032, 0.013, 0.042, 0.031], "f": "nnnnnppppp"}, {"l": "VT 10,000 – VT 19,999", "v": [2376, 1842, 1006, 3212, 4218, 0.09, 0.103, 0.059, 0.118, 0.095], "f": "nnnnnppppp"}, {"l": "VT 20,000 – VT 39,999", "v": [6323, 5227, 4168, 7381, 11550, 0.24, 0.291, 0.243, 0.272, 0.261], "f": "nnnnnppppp"}, {"l": "VT 40,000 – VT 59,999", "v": [5591, 3597, 3615, 5573, 9188, 0.212, 0.2, 0.211, 0.205, 0.208], "f": "nnnnnppppp"}, {"l": "VT 60,000 – VT 79,999", "v": [2732, 1825, 2029, 2527, 4556, 0.104, 0.102, 0.118, 0.093, 0.103], "f": "nnnnnppppp"}, {"l": "VT 80,000 – VT 99,999", "v": [1576, 1169, 1233, 1511, 2745, 0.06, 0.065, 0.072, 0.056, 0.062], "f": "nnnnnppppp"}, {"l": "VT 100,000 – VT 149,999", "v": [1721, 1069, 1276, 1514, 2790, 0.065, 0.059, 0.074, 0.056, 0.063], "f": "nnnnnppppp"}, {"l": "VT 150,000 – VT 199,999", "v": [904, 490, 677, 717, 1394, 0.034, 0.027, 0.039, 0.026, 0.031], "f": "nnnnnppppp"}, {"l": "More than VT 200,000", "v": [1175, 281, 838, 618, 1456, 0.045, 0.016, 0.049, 0.023, 0.033], "f": "nnnnnppppp"}, {"l": "Refuse to Answer", "v": [404, 195, 278, 321, 599, 0.015, 0.011, 0.016, 0.012, 0.014], "f": "nnnnnppppp"}, {"l": "Don't Know", "v": [2163, 1427, 1748, 1842, 3590, 0.082, 0.079, 0.102, 0.068, 0.081], "f": "nnnnnppppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 5, "n": "Male", "k": "m"}, {"c": 6, "n": "Female", "k": "f"}]}, {"name": "Urban / Rural", "series": [{"c": 7, "n": "Urban", "k": "u"}, {"c": 8, "n": "Rural", "k": "r"}]}, {"name": "Total", "series": [{"c": 9, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": [{"label": "Wage earners", "v": 44278, "f": "n"}]}, {"id": "t25", "code": "T25", "group": "Hours & earnings", "nav": "Wage by age group", "title": "Employees by monthly wage band and age group", "desc": "Monthly cash wage of employees (Vatu), as a share of each age group.", "header": ["Wage Category", "15–24 Headcount", "25–64 Headcount", "65+ Headcount", "Total Headcount", "15–24 %", "25–64 %", "65+ %", "Total %"], "rows": [{"l": "Total", "v": [6495, 36960, 823, 44278, 1, 1, 1, 1], "f": "nnnnpppp"}, {"l": "0 – VT 4,999", "v": [363, 435, 31, 829, 0.056, 0.012, 0.038, 0.019], "f": "nnnnpppp"}, {"l": "VT 5,000 – VT 9,999", "v": [598, 725, 41, 1364, 0.092, 0.02, 0.05, 0.031], "f": "nnnnpppp"}, {"l": "VT 10,000 – VT 19,999", "v": [1014, 3167, 37, 4218, 0.156, 0.086, 0.045, 0.095], "f": "nnnnpppp"}, {"l": "VT 20,000 – VT 39,999", "v": [2322, 8950, 278, 11550, 0.357, 0.242, 0.337, 0.261], "f": "nnnnpppp"}, {"l": "VT 40,000 – VT 59,999", "v": [1097, 7951, 140, 9188, 0.169, 0.215, 0.17, 0.208], "f": "nnnnpppp"}, {"l": "VT 60,000 – VT 79,999", "v": [318, 4210, 28, 4556, 0.049, 0.114, 0.034, 0.103], "f": "nnnnpppp"}, {"l": "VT 80,000 – VT 99,999", "v": [158, 2545, 41, 2745, 0.024, 0.069, 0.05, 0.062], "f": "nnnnpppp"}, {"l": "VT 100,000 – VT 149,999", "v": [81, 2688, 20, 2790, 0.013, 0.073, 0.024, 0.063], "f": "nnnnpppp"}, {"l": "VT 150,000 – VT 199,999", "v": [49, 1294, 51, 1394, 0.008, 0.035, 0.062, 0.031], "f": "nnnnpppp"}, {"l": "More than VT 200,000", "v": [23, 1409, 24, 1456, 0.004, 0.038, 0.029, 0.033], "f": "nnnnpppp"}, {"l": "Refuse to Answer", "v": [78, 472, 48, 599, 0.012, 0.013, 0.059, 0.014], "f": "nnnnpppp"}, {"l": "Don't Know", "v": [394, 3113, 83, 3590, 0.061, 0.084, 0.101, 0.081], "f": "nnnnpppp"}], "chart": {"sets": [{"name": "Age group", "series": [{"c": 4, "n": "15–24", "k": "a1"}, {"c": 5, "n": "25–64", "k": "a2"}, {"c": 6, "n": "65+", "k": "a3"}]}, {"name": "Total", "series": [{"c": 7, "n": "Total", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"]}, "kpis": []}, {"id": "t26", "code": "T26", "group": "Own-use production", "nav": "Own-use & subsistence", "title": "Subsistence and own-use producers (all goods)", "desc": "Share of the working-age population producing goods mainly for their own household's use.", "header": ["Category", "Male Headcount", "Female Headcount", "Total Headcount", "Male %", "Female %", "Total %"], "rows": [{"l": "Total subsistence & own-use producers", "v": [63098, 64728, 127825, 0.59, 0.617, 0.603], "f": "nnnppp"}, {"l": "By age group", "h": 1}, {"l": "15–24", "v": [15256, 13761, 29017, 0.531, 0.521, 0.526], "f": "nnnppp"}, {"l": "25–64", "v": [43314, 46238, 89551, 0.617, 0.656, 0.637], "f": "nnnppp"}, {"l": "65+", "v": [4528, 4729, 9257, 0.567, 0.586, 0.577], "f": "nnnppp"}, {"l": "By geographic location", "h": 1}, {"l": "Urban", "v": [3415, 4149, 7564, 0.168, 0.196, 0.182], "f": "nnnppp"}, {"l": "Rural", "v": [59682, 60579, 120261, 0.689, 0.723, 0.706], "f": "nnnppp"}, {"l": "By educational attainment (16+)", "h": 1}, {"l": "Never Attended School", "v": [4355, 5689, 10043, 0.736, 0.772, 0.756], "f": "nnnppp"}, {"l": "ECE & Kindergarten", "v": [6966, 6900, 13866, 0.779, 0.804, 0.791], "f": "nnnppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [30157, 30731, 60889, 0.659, 0.71, 0.684], "f": "nnnppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [9211, 11295, 20506, 0.489, 0.571, 0.531], "f": "nnnppp"}, {"l": "Senior Secondary (Year 11 – Year 13/14)", "v": [6190, 6440, 12630, 0.442, 0.395, 0.417], "f": "nnnppp"}, {"l": "Post Secondary Non-Tertiary", "v": [2389, 1098, 3487, 0.528, 0.389, 0.475], "f": "nnnppp"}, {"l": "Tertiary", "v": [1842, 1151, 2993, 0.331, 0.286, 0.312], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 3, "n": "Male", "k": "m"}, {"c": 4, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 5, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "Own-use production rate", "v": 0.603, "f": "p"}]}, {"id": "t27", "code": "T27", "group": "Own-use production", "nav": "Own-use foodstuff", "title": "Own-use producers of foodstuffs", "desc": "Share of the working-age population growing, fishing or gathering food mainly for own use.", "header": ["Category", "Male Headcount", "Female Headcount", "Total Headcount", "Male %", "Female %", "Total %"], "rows": [{"l": "Own-use producers of Foodstuffs", "v": [41041, 39110, 80152, 0.384, 0.373, 0.378], "f": "nnnppp"}, {"l": "By age group", "h": 1}, {"l": "15–24", "v": [8715, 7074, 15789, 0.303, 0.268, 0.286], "f": "nnnppp"}, {"l": "25–64", "v": [29431, 29309, 58740, 0.419, 0.416, 0.418], "f": "nnnppp"}, {"l": "65+", "v": [2896, 2727, 5623, 0.363, 0.338, 0.35], "f": "nnnppp"}, {"l": "By geographic location", "h": 1}, {"l": "Urban", "v": [1939, 2443, 4383, 0.095, 0.116, 0.106], "f": "nnnppp"}, {"l": "Rural", "v": [39102, 36667, 75769, 0.451, 0.437, 0.445], "f": "nnnppp"}, {"l": "By educational attainment (16+)", "h": 1}, {"l": "Never Attended School", "v": [2631, 3184, 5816, 0.445, 0.432, 0.438], "f": "nnnppp"}, {"l": "ECE & Kindergarten", "v": [4645, 4148, 8793, 0.52, 0.483, 0.502], "f": "nnnppp"}, {"l": "Primary (Year 1 – Year 8)", "v": [19779, 19019, 38798, 0.432, 0.44, 0.436], "f": "nnnppp"}, {"l": "Junior Secondary (Year 9 – Year 10)", "v": [5609, 6613, 12221, 0.298, 0.334, 0.316], "f": "nnnppp"}, {"l": "Senior Secondary (Year 11 – Year 13/14)", "v": [4320, 3984, 8303, 0.308, 0.244, 0.274], "f": "nnnppp"}, {"l": "Post Secondary Non-Tertiary", "v": [1790, 898, 2689, 0.396, 0.318, 0.366], "f": "nnnppp"}, {"l": "Tertiary", "v": [1090, 621, 1710, 0.196, 0.154, 0.178], "f": "nnnppp"}], "chart": {"sets": [{"name": "Sex", "series": [{"c": 3, "n": "Male", "k": "m"}, {"c": 4, "n": "Female", "k": "f"}]}, {"name": "Total", "series": [{"c": 5, "n": "Total", "k": "t"}]}], "fmt": "p", "max": 1}, "kpis": [{"label": "Foodstuff own-use rate", "v": 0.378, "f": "p"}]}, {"id": "t28", "code": "T28", "group": "Migration & mobility", "nav": "Household emigration", "title": "Household emigration rate by province", "desc": "Share of households with at least one member currently living abroad.", "header": ["Province / area", "HHs with ≥1 absent member", "HHs with no absent member", "Total HHs", "HH emigration rate (%)"], "rows": [{"l": "Torba", "v": [99, 3190, 3289, 0.03], "f": "nnnp"}, {"l": "Sanma rural", "v": [427, 11415, 11842, 0.036], "f": "nnnp"}, {"l": "Penama", "v": [876, 7795, 8671, 0.101], "f": "nnnp"}, {"l": "Malampa", "v": [744, 9597, 10341, 0.072], "f": "nnnp"}, {"l": "Shefa rural", "v": [3803, 14070, 17873, 0.213], "f": "nnnp"}, {"l": "Tafea", "v": [1165, 8684, 9849, 0.118], "f": "nnnp"}, {"l": "Sanma urban (Luganville)", "v": [337, 4386, 4723, 0.071], "f": "nnnp"}, {"l": "Shefa urban (Port Vila)", "v": [1565, 7682, 9247, 0.169], "f": "nnnp"}, {"l": "Total", "v": [9015, 66820, 75835, 0.119], "f": "nnnp"}], "chart": {"sets": [{"name": "Emigration rate", "series": [{"c": 3, "n": "Emigration rate", "k": "t"}]}, {"name": "Households with absent member", "series": [{"c": 0, "n": "Households with absent member", "k": "t"}]}], "fmt": "p", "skip": ["^Total$"], "sort": true}, "kpis": [{"label": "Household emigration rate", "v": 0.119, "f": "p"}, {"label": "Households with a member abroad", "v": 9015, "f": "n"}]}, {"id": "t29", "code": "T29", "group": "Migration & mobility", "nav": "Members abroad", "title": "Household members abroad by destination and reason", "desc": "Usual household members currently living overseas.", "header": ["Destination", "Labour / Work", "Education", "Family / Marriage", "Other (incl. NK)", "Total"], "rows": [{"l": "Australia", "v": [4529, 113, 119, 403, 5165], "f": "nnnnn"}, {"l": "New Zealand", "v": [1937, 22, 88, 223, 2271], "f": "nnnnn"}, {"l": "Fiji", "v": [14, 462, 13, 34, 523], "f": "nnnnn"}, {"l": "Other Pacific", "v": [1444, 159, 162, 232, 1996], "f": "nnnnn"}, {"l": "Rest of World", "v": [26, 51, 84, 0, 161], "f": "nnnnn"}, {"l": "Total", "v": [7950, 807, 466, 892, 10115], "f": "nnnnn"}], "chart": {"sets": [{"name": "All reasons", "series": [{"c": 4, "n": "All reasons", "k": "t"}]}, {"name": "Labour / Work", "series": [{"c": 0, "n": "Labour / Work", "k": "t"}]}, {"name": "Education", "series": [{"c": 1, "n": "Education", "k": "t"}]}, {"name": "Family / Marriage", "series": [{"c": 2, "n": "Family / Marriage", "k": "t"}]}, {"name": "Other", "series": [{"c": 3, "n": "Other", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"]}, "kpis": [{"label": "Members abroad", "v": 10115, "f": "n"}, {"label": "Abroad for work", "v": 7950, "f": "n"}]}, {"id": "t30", "code": "T30", "group": "Migration & mobility", "nav": "Labour mobility schemes", "title": "Workers on labour mobility programmes by province", "desc": "Household members abroad for work, by seasonal / labour mobility scheme and home province.", "header": ["Province / area", "RSE-NZ", "PALM Long-AU", "PALM Short-AU", "Other overseas", "Other work", "Total"], "rows": [{"l": "Torba", "v": [44, 17, 20, 0, 0, 81], "f": "nnnnnn"}, {"l": "Sanma", "v": [79, 165, 81, 0, 30, 354], "f": "nnnnnn"}, {"l": "Penama", "v": [266, 185, 349, 0, 0, 800], "f": "nnnnnn"}, {"l": "Malampa", "v": [292, 278, 102, 0, 9, 681], "f": "nnnnnn"}, {"l": "Shefa rural", "v": [978, 1017, 693, 612, 0, 3300], "f": "nnnnnn"}, {"l": "Tafea", "v": [362, 634, 198, 0, 11, 1204], "f": "nnnnnn"}, {"l": "Sanma urban (Luganville)", "v": [109, 148, 61, 0, 10, 328], "f": "nnnnnn"}, {"l": "Shefa urban (Port Vila)", "v": [309, 430, 427, 0, 35, 1201], "f": "nnnnnn"}, {"l": "Total", "v": [2439, 2875, 1930, 612, 94, 7950], "f": "nnnnnn"}], "chart": {"sets": [{"name": "All programmes", "series": [{"c": 5, "n": "All programmes", "k": "t"}]}, {"name": "RSE (NZ)", "series": [{"c": 0, "n": "RSE (NZ)", "k": "t"}]}, {"name": "PALM long-term (AU)", "series": [{"c": 1, "n": "PALM long-term (AU)", "k": "t"}]}, {"name": "PALM short-term (AU)", "series": [{"c": 2, "n": "PALM short-term (AU)", "k": "t"}]}, {"name": "Other overseas", "series": [{"c": 3, "n": "Other overseas", "k": "t"}]}, {"name": "Other work", "series": [{"c": 4, "n": "Other work", "k": "t"}]}], "fmt": "n", "skip": ["^Total$"], "sort": true}, "kpis": [{"label": "Workers abroad", "v": 7950, "f": "n"}, {"label": "RSE (NZ)", "v": 2439, "f": "n"}, {"label": "PALM (AU)", "v": 2875, "f": "n"}]}]};
+</script>
+<!-- LFS-DATA:END -->
+<script>
+const D = window.LFS;
+const TABLES = D.tables;
+const $ = (s, el = document) => el.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtN = n => n == null ? "–" : (Number.isInteger(n) ? n : Math.round(n * 10) / 10).toLocaleString("en-US");
+const fmtP = p => p == null ? "–" : (p * 100).toFixed(1) + "%";
+const fmtK = n => n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + "k" : String(n);
+const fmtBy = f => f === "p" ? fmtP : fmtN;
+
+const COLOR = {
+  m: "var(--s-male)", f: "var(--s-female)", u: "var(--s-urban)", r: "var(--s-rural)",
+  t: "var(--s-total)", a1: "var(--s-a1)", a2: "var(--s-a2)", a3: "var(--s-a3)",
+  old: "var(--s-old)", new: "var(--s-new)",
+};
+const SERIES = {
+  m: { name: "Male", color: COLOR.m },
+  f: { name: "Female", color: COLOR.f },
+  u: { name: "Urban", color: COLOR.u },
+  r: { name: "Rural", color: COLOR.r },
+};
+const LENS_KEYS = { sex: ["m", "f"], region: ["u", "r"] };
+let lens = "sex";
+
+/* ---------- tooltip ---------- */
+const tip = $("#tip");
+function showTip(e, title, rows) {
+  tip.innerHTML = `<div class="t-title">${esc(title)}</div>` + rows.map(r =>
+    `<div class="t-row"><span>${r.color ? `<i style="background:${r.color}"></i>` : ""}${esc(r.name)}</span><b>${r.value}</b></div>`
+  ).join("");
+  tip.style.opacity = 1;
+  const pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  if (x + w > innerWidth - 8) x = e.clientX - w - pad;
+  if (y + h > innerHeight - 8) y = e.clientY - h - pad;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip() { tip.style.opacity = 0; }
+
+/* ---------- svg helpers ---------- */
+function el(tag, attrs = {}, parent) {
+  const n = document.createElementNS(NS, tag);
+  for (const k in attrs) n.setAttribute(k, attrs[k]);
+  if (parent) parent.appendChild(n);
+  return n;
+}
+// bar with 4px rounding on the data end only (baseline end stays square)
+function barPath(x, y, w, h, r = 4) {
+  if (!(w > 0)) return "";
+  r = Math.min(r, w, h / 2);
+  return `M${x},${y}H${x + w - r}Q${x + w},${y} ${x + w},${y + r}V${y + h - r}Q${x + w},${y + h} ${x + w - r},${y + h}H${x}Z`;
+}
+function barPathLeft(xRight, y, w, h, r = 4) {
+  if (!(w > 0)) return "";
+  r = Math.min(r, w, h / 2);
+  const x = xRight - w;
+  return `M${xRight},${y}H${x + r}Q${x},${y} ${x},${y + r}V${y + h - r}Q${x},${y + h} ${x + r},${y + h}H${xRight}Z`;
+}
+function measure(texts, size = 11.5) {
+  const c = measure.c || (measure.c = document.createElement("canvas").getContext("2d"));
+  c.font = `${size}px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`;
+  return Math.max(0, ...texts.map(t => c.measureText(t).width));
+}
+// wrap a label into at most 2 lines that fit maxW; ellipsis if still too long
+function wrapLabel(text, maxW) {
+  if (measure([text]) <= maxW) return [text];
+  const words = text.split(" "), lines = [""];
+  for (const w of words) {
+    const cur = lines[lines.length - 1], next = cur ? cur + " " + w : w;
+    if (measure([next]) <= maxW || !cur) lines[lines.length - 1] = next;
+    else if (lines.length < 2) lines.push(w);
+    else lines[1] += " " + w;
+  }
+  const last = lines.length - 1;
+  if (measure([lines[last]]) > maxW) {
+    let l = lines[last];
+    while (l.length > 1 && measure([l + "…"]) > maxW) l = l.slice(0, -1);
+    lines[last] = l.trimEnd() + "…";
+  }
+  return lines;
+}
+function legend(keys) {
+  return `<div class="legend">${keys.map(k => `<span><i style="background:${k.color}"></i>${esc(k.name)}</span>`).join("")}</div>`;
+}
+function table(head, rows) {
+  return `<div class="tbl-wrap"><table class="data"><thead><tr>${head.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${
+    rows.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+const linkCodes = s => s.replace(/T\d+(\.\d+)?/g, code => {
+  const t = TABLES.find(x => x.code === code);
+  return t ? `<a href="#${t.id}">${code}</a>` : code;
+});
+
+/* ---------- grouped horizontal bar chart ---------- */
+function groupedBars(container, { rows, keys, fmt = fmtP, max }) {
+  const W = container.clientWidth || 520;
+  const valW = 50;
+  const LW = Math.min(W * 0.4, measure(rows.map(r => r.label)) + 10);
+  const barH = keys.length > 1 ? 9 : 13, gap = 2, groupPad = keys.length > 1 ? 12 : 9, lineH = 13;
+  const barsH = keys.length * barH + (keys.length - 1) * gap;
+  const layout = rows.map(r => {
+    const lines = wrapLabel(r.label, LW - 10);
+    return { r, lines, h: Math.max(barsH, lines.length * lineH) };
+  });
+  const H = layout.reduce((s, g) => s + g.h + groupPad, 0);
+  const plotW = W - LW - valW;
+  max = max ?? Math.max(1e-9, ...rows.flatMap(r => keys.map(k => r[k.key] ?? 0)));
+  const x = v => ((v ?? 0) / max) * plotW;
+
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img" });
+  el("line", { x1: LW, x2: LW, y1: 0, y2: H - groupPad / 2, class: "axis" }, svg);
+  let y0 = groupPad / 2;
+  layout.forEach(({ r, lines, h }) => {
+    const g = el("g", {}, svg);
+    const hit = el("rect", { x: 0, y: y0 - groupPad / 2 + 1, width: W, height: h + groupPad - 2, class: "hit", rx: 4 }, g);
+    const t = el("text", { x: LW - 8, y: y0 + h / 2 - (lines.length - 1) * lineH / 2 + 4, "text-anchor": "end" }, g);
+    lines.forEach((ln, i) => { const ts = el("tspan", { x: LW - 8, dy: i ? lineH : 0 }, t); ts.textContent = ln; });
+    const by = y0 + (h - barsH) / 2;
+    keys.forEach((k, j) => {
+      const y = by + j * (barH + gap), v = r[k.key];
+      el("path", { d: barPath(LW, y, x(v), barH), fill: k.color }, g);
+      const vt = el("text", { x: LW + x(v) + 5, y: y + barH - 1.5, class: "val", "font-size": keys.length > 1 ? 10.5 : 11 }, g);
+      vt.textContent = fmt(v);
+    });
+    hit.addEventListener("mousemove", e => showTip(e, r.label, keys.map(k => ({ name: k.name, color: k.color, value: fmt(r[k.key]) }))));
+    hit.addEventListener("mouseleave", hideTip);
+    y0 += h + groupPad;
+  });
+  container.appendChild(svg);
+}
+
+/* ---------- population pyramid ---------- */
+function drawPyramid(c, data) {
+  const rows = data.slice().reverse();
+  const W = c.clientWidth || 520, mid = W / 2, labW = 44, rowH = 18, H = rows.length * rowH + 4;
+  const half = mid - labW / 2 - 38;
+  const max = Math.max(...rows.flatMap(r => [r.m, r.f]));
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  rows.forEach((r, i) => {
+    const y = i * rowH + 2, h = rowH - 4;
+    const wm = r.m / max * half, wf = r.f / max * half;
+    el("path", { d: barPathLeft(mid - labW / 2, y, wm, h), fill: COLOR.m }, svg);
+    el("path", { d: barPath(mid + labW / 2, y, wf, h), fill: COLOR.f }, svg);
+    const t = el("text", { x: mid, y: y + h - 3, "text-anchor": "middle" }, svg); t.textContent = r.age;
+    const tm = el("text", { x: mid - labW / 2 - wm - 4, y: y + h - 3, "text-anchor": "end", class: "val", "font-size": 10.5 }, svg); tm.textContent = fmtK(r.m);
+    const tf = el("text", { x: mid + labW / 2 + wf + 4, y: y + h - 3, class: "val", "font-size": 10.5 }, svg); tf.textContent = fmtK(r.f);
+    const hit = el("rect", { x: 0, y: y - 1, width: W, height: rowH, class: "hit", rx: 4 }, svg);
+    hit.addEventListener("mousemove", e => showTip(e, "Age " + r.age, [
+      { name: "Male", color: COLOR.m, value: fmtN(r.m) },
+      { name: "Female", color: COLOR.f, value: fmtN(r.f) },
+      { name: "Total", value: fmtN(r.m + r.f) }]));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  c.appendChild(svg);
+}
+
+/* ---------- labour force status (100% stacked) ---------- */
+const LF_PARTS = [
+  { key: "employed", name: "Employed", color: "var(--lf-emp)" },
+  { key: "unemployed", name: "Unemployed", color: "var(--lf-unemp)" },
+  { key: "outside", name: "Outside labour force", color: "var(--lf-out)" },
+];
+function lfRows() {
+  const s = D.lfStatus, find = (reg, sex) => s.find(r => r.region === reg && r.sex === sex);
+  const combine = (a, b, label) => ({ label, employed: a.employed + b.employed, unemployed: a.unemployed + b.unemployed, outside: a.outside + b.outside, total: a.total + b.total });
+  return [
+    combine(find("National", "Male"), find("National", "Female"), "All persons 15+"),
+    { ...find("National", "Male"), label: "Male" },
+    { ...find("National", "Female"), label: "Female" },
+    combine(find("Urban", "Male"), find("Urban", "Female"), "Urban"),
+    combine(find("Rural", "Male"), find("Rural", "Female"), "Rural"),
+    ...["Urban", "Rural"].flatMap(reg => ["Male", "Female"].map(sex => ({ ...find(reg, sex), label: `${reg} ${sex.toLowerCase()}` }))),
+  ];
+}
+function drawLFStack(c) {
+  const shown = lfRows();
+  const W = c.clientWidth || 520, LW = measure(shown.map(r => r.label)) + 12, rowH = 30, H = shown.length * rowH;
+  const pw = W - LW;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  shown.forEach((r, i) => {
+    const y = i * rowH + 4, h = 20;
+    const t = el("text", { x: LW - 8, y: y + 14, "text-anchor": "end" }, svg); t.textContent = r.label;
+    let x = LW;
+    LF_PARTS.forEach((p, j) => {
+      const w = r[p.key] / r.total * pw;
+      const isLast = j === LF_PARTS.length - 1;
+      el("rect", { x, y, width: Math.max(0, w - (isLast ? 0 : 2)), height: h, fill: p.color, rx: isLast || j === 0 ? 4 : 0 }, svg);
+      if (p.key === "employed") { const vt = el("text", { x: x + 6, y: y + 14, style: "fill:#fff;font-weight:600", "font-size": 11 }, svg); vt.textContent = fmtP(r[p.key] / r.total); }
+      if (p.key === "outside") { const vt = el("text", { x: W - 6, y: y + 14, "text-anchor": "end", class: "val", "font-size": 11 }, svg); vt.textContent = fmtP(r[p.key] / r.total); }
+      x += w;
+    });
+    const hit = el("rect", { x: 0, y: y - 4, width: W, height: rowH, class: "hit", rx: 4 }, svg);
+    hit.addEventListener("mousemove", e => showTip(e, r.label, LF_PARTS.map(p => ({ name: p.name, color: p.color, value: `${fmtP(r[p.key] / r.total)} (${fmtN(r[p.key])})` }))));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+  c.appendChild(svg);
+}
+
+/* =====================================================================
+   OVERVIEW PAGE
+   ===================================================================== */
+const OVERVIEW_HTML = `
+  <section class="kpis" id="kpis"></section>
+  <section class="grid">
+    <article class="card" id="c-pyramid"></article>
+    <article class="card" id="c-lfstatus"></article>
+    <article class="card" id="c-rates"></article>
+    <article class="card" id="c-lu"></article>
+    <article class="card" id="c-neet"></article>
+    <article class="card" id="c-status"></article>
+    <article class="card wide" id="c-sector"></article>
+    <article class="card" id="c-occupation"></article>
+    <article class="card" id="c-informal"></article>
+  </section>`;
+
+/* card scaffold with chart/table toggle; body(el) draws the chart, tbl() returns table html */
+function card(id, { title, desc, src, extra = "", body, tbl, legendKeys }) {
+  const root = $("#" + id);
+  const showTable = root.dataset.table === "1";
+  root.innerHTML = `
+    <div class="card-head">
+      <div><h2>${title}</h2><div class="desc">${desc}</div></div>
+      <div class="card-tools">${extra}<button class="link-btn" data-tt>${showTable ? "Chart" : "Table"}</button></div>
+    </div>
+    ${legendKeys && !showTable ? legend(legendKeys) : ""}
+    <div class="body"></div>
+    <div class="src">Source: ${linkCodes(src)}</div>`;
+  const b = $(".body", root);
+  if (showTable) b.innerHTML = tbl(); else body(b);
+  $("[data-tt]", root).onclick = () => { root.dataset.table = showTable ? "0" : "1"; renderOverview(false); };
+  return root;
+}
+
+function renderKPIs() {
+  const lf = D.lfpr[0], ep = D.epr[0], lu1 = D.lu[0], n = D.neet;
+  const [a, b] = LENS_KEYS[lens];
+  const split = o => `${SERIES[a].name} ${fmtP(o[a])} · ${SERIES[b].name} ${fmtP(o[b])}`;
+  const kpis = [
+    { label: "Population", value: fmtN(D.population), split: `Urban ${fmtN(D.popRegion.urban)} · Rural ${fmtN(D.popRegion.rural)}` },
+    { label: "Employed persons", value: fmtN(D.employed), split: `of ${fmtN(D.workingAge)} aged 15+` },
+    { label: "Labour force participation", value: fmtP(lf.t), split: split(lf) },
+    { label: "Employment-to-population", value: fmtP(ep.t), split: split(ep) },
+    { label: "Unemployment rate (LU1)", value: fmtP(lu1.t), split: split(lu1) },
+    { label: "Youth NEET rate (15–24)", value: fmtP(n.t), split: split(n) },
+    { label: "Informal employment", value: fmtP(D.informalRate), split: `Rural ${fmtP(D.informal.region[1].t)} · Urban ${fmtP(D.informal.region[0].t)}` },
+    { label: "Households with a member abroad", value: fmtP(D.emigrationRate), split: "Household emigration rate" },
+  ];
+  $("#kpis").innerHTML = kpis.map(k =>
+    `<div class="kpi"><div class="k-label">${k.label}</div><div class="k-value">${k.value}</div><div class="k-split">${k.split}</div></div>`).join("");
+}
+
+function renderPyramid() {
+  card("c-pyramid", {
+    title: "Population by age and sex",
+    desc: `Total population ${fmtN(D.population)}`,
+    src: "T5.1",
+    legendKeys: [SERIES.m, SERIES.f],
+    tbl: () => table(["Age", "Male", "Female", "Total"], D.pyramid.map(r => [r.age, fmtN(r.m), fmtN(r.f), fmtN(r.m + r.f)])),
+    body: c => drawPyramid(c, D.pyramid),
+  });
+}
+
+function renderLFStatus() {
+  card("c-lfstatus", {
+    title: "Labour force status",
+    desc: "Share of the working-age population (15+)",
+    src: "T7",
+    legendKeys: LF_PARTS,
+    tbl: () => table(["Group", "Employed", "Unemployed", "Outside LF", "Total"], lfRows().map(r => [r.label, fmtN(r.employed), fmtN(r.unemployed), fmtN(r.outside), fmtN(r.total)])),
+    body: drawLFStack,
+  });
+}
+
+let rateMetric = "lfpr";
+function renderRates() {
+  const keys = LENS_KEYS[lens].map(k => ({ key: k, ...SERIES[k] }));
+  const rows = D[rateMetric].map((r, i) => ({ ...r, label: i === 0 ? "All persons 15+" : r.label }));
+  const root = card("c-rates", {
+    title: rateMetric === "lfpr" ? "Labour force participation rate" : "Employment-to-population ratio",
+    desc: "By age group and educational attainment",
+    src: rateMetric === "lfpr" ? "T8" : "T9",
+    extra: `<select class="sel" aria-label="Metric"><option value="lfpr">LFPR</option><option value="epr">EPR</option></select>`,
+    legendKeys: keys,
+    tbl: () => table(["Group", ...keys.map(k => k.name), "Total"], rows.map(r => [r.label, ...keys.map(k => fmtP(r[k.key])), fmtP(r.t)])),
+    body: c => groupedBars(c, { rows, keys, max: 1 }),
+  });
+  const sel = $("select", root); sel.value = rateMetric;
+  sel.onchange = () => { rateMetric = sel.value; renderRates(); };
+}
+
+function renderLU() {
+  const keys = LENS_KEYS[lens].map(k => ({ key: k, ...SERIES[k] }));
+  const rows = D.lu.map(r => ({ ...r, label: r.label.replace(":", " ·") }));
+  card("c-lu", {
+    title: "Labour underutilisation (LU1–LU4)",
+    desc: `Nationally, ${fmtP(D.lu[3].t)} of the extended labour force is underutilised (LU4)`,
+    src: "T17",
+    legendKeys: keys,
+    tbl: () => table(["Indicator", ...keys.map(k => k.name), "Total"], D.lu.map(r => [r.label, ...keys.map(k => fmtP(r[k.key])), fmtP(r.t)])),
+    body: c => groupedBars(c, { rows, keys }),
+  });
+}
+
+function renderNEET() {
+  const cmp = D.neetCompare;
+  const keys = [
+    { key: "a", name: "13th ICLS definition", color: COLOR.old },
+    { key: "b", name: "19th ICLS definition", color: COLOR.new },
+  ];
+  const rows = ["t", ...LENS_KEYS[lens]].map(g => ({ label: g === "t" ? "All youth 15–24" : SERIES[g].name, a: cmp.icls13[g], b: cmp.icls19[g] }));
+  card("c-neet", {
+    title: "Youth NEET rate",
+    desc: "Young people (15–24) not in employment, education or training; the 19th ICLS definition counts more youth as NEET",
+    src: "T19, T20",
+    legendKeys: keys,
+    tbl: () => table(["Group", "13th ICLS", "19th ICLS"], rows.map(r => [r.label, fmtP(r.a), fmtP(r.b)])),
+    body: c => groupedBars(c, { rows, keys, max: 0.6 }),
+  });
+}
+
+function renderStatus() {
+  const keys = LENS_KEYS[lens].map(k => ({ key: k, ...SERIES[k] }));
+  card("c-status", {
+    title: "Status in employment (ICSE-18)",
+    desc: `Share of employed persons · ${fmtP(D.risk[0].t)} work for profit, ${fmtP(D.risk[1].t)} for pay`,
+    src: "T12, T14",
+    legendKeys: keys,
+    tbl: () => table(["Status", ...keys.map(k => k.name), "Total"], D.status.map(r => [r.label, ...keys.map(k => fmtP(r[k.key])), fmtP(r.t)])),
+    body: c => groupedBars(c, { rows: D.status, keys }),
+  });
+}
+
+let sectorMode = "count";
+function renderSector() {
+  const keys = [{ key: "m", ...SERIES.m }, { key: "f", ...SERIES.f }];
+  const sorted = D.sector.slice().sort((a, b) => b.t - a.t);
+  const totM = sorted.reduce((s, r) => s + r.m, 0), totF = sorted.reduce((s, r) => s + r.f, 0);
+  const rows = sectorMode === "count" ? sorted : sorted.map(r => ({ ...r, m: r.m / totM, f: r.f / totF }));
+  const root = card("c-sector", {
+    title: "Employment by economic sector",
+    desc: `${sorted[0].label} and ${sorted[1].label.toLowerCase()} employ ${fmtP((sorted[0].t + sorted[1].t) / D.employed)} of workers${lens === "region" ? " · sector tables are available by sex only" : ""}`,
+    src: "T10",
+    extra: `<div class="seg" role="group" aria-label="Units"><button data-m="count">Persons</button><button data-m="share">% of sex</button></div>`,
+    legendKeys: keys,
+    tbl: () => table(["Sector", "Male", "Female", "Total"], sorted.map(r => [r.label, fmtN(r.m), fmtN(r.f), fmtN(r.t)])),
+    body: c => groupedBars(c, { rows, keys, fmt: sectorMode === "count" ? fmtN : fmtP }),
+  });
+  root.querySelectorAll("[data-m]").forEach(b => {
+    b.setAttribute("aria-pressed", b.dataset.m === sectorMode);
+    b.onclick = () => { sectorMode = b.dataset.m; renderSector(); };
+  });
+}
+
+function renderOccupation() {
+  const keys = [{ key: "m", ...SERIES.m }, { key: "f", ...SERIES.f }];
+  const rows = D.occupation.slice().sort((a, b) => b.t - a.t);
+  card("c-occupation", {
+    title: "Employment by occupation (ISCO)",
+    desc: "Employed persons by major occupation group" + (lens === "region" ? " · available by sex only" : ""),
+    src: "T16",
+    legendKeys: keys,
+    tbl: () => table(["Occupation", "Male", "Female", "Total"], rows.map(r => [r.label, fmtN(r.m), fmtN(r.f), fmtN(r.t)])),
+    body: c => groupedBars(c, { rows, keys, fmt: fmtN }),
+  });
+}
+
+let informalBy = "activity";
+function renderInformal() {
+  const keys = [{ key: "m", ...SERIES.m }, { key: "f", ...SERIES.f }];
+  const rows = D.informal[informalBy];
+  const opts = { age: "Age group", activity: "Economic activity", education: "Education (16+)", status: "Status in employment" };
+  const root = card("c-informal", {
+    title: "Informal employment rate",
+    desc: `${fmtP(D.informalRate)} of employed persons are informally employed` + (lens === "region" ? ` · Urban ${fmtP(D.informal.region[0].t)}, Rural ${fmtP(D.informal.region[1].t)}` : ""),
+    src: "T21",
+    extra: `<select class="sel" aria-label="Breakdown">${Object.entries(opts).map(([k, v]) => `<option value="${k}">${v}</option>`).join("")}</select>`,
+    legendKeys: keys,
+    tbl: () => table([opts[informalBy], "Male", "Female", "Total"], rows.map(r => [r.label, fmtP(r.m), fmtP(r.f), fmtP(r.t)])),
+    body: c => groupedBars(c, { rows, keys, max: 1 }),
+  });
+  const sel = $("select", root); sel.value = informalBy;
+  sel.onchange = () => { informalBy = sel.value; renderInformal(); };
+}
+
+function renderOverview(fresh = true) {
+  const view = $("#view");
+  if (fresh || !$("#kpis")) view.innerHTML = OVERVIEW_HTML;
+  renderKPIs(); renderPyramid(); renderLFStatus(); renderRates(); renderLU();
+  renderNEET(); renderStatus(); renderSector(); renderOccupation(); renderInformal();
+}
+
+/* =====================================================================
+   TABLE PAGES (one per table, generated from D.tables)
+   ===================================================================== */
+const tableState = {}; // per table: { set, section }
+
+function sectionsOf(t) {
+  // heading rows split a table into sections; rows above the first heading are the table's headline
+  const out = [];
+  let cur = null;
+  const before = [];
+  t.rows.forEach(r => {
+    if (r.h) { cur = { name: r.l, rows: [] }; out.push(cur); }
+    else if (cur) cur.rows.push(r);
+    else before.push(r);
+  });
+  return out.length ? out : [{ name: "All", rows: before }];
+}
+
+function chartRowsFor(t, st) {
+  const ch = t.chart, set = ch.sets[st.set];
+  const secs = sectionsOf(t);
+  const sec = secs[Math.min(st.section, secs.length - 1)];
+  const skip = (ch.skip || []).map(s => new RegExp(s, "i"));
+  const only = (ch.only || []).map(s => new RegExp(s, "i"));
+  const rows = sec.rows.filter(r => !r.i && !skip.some(re => re.test(r.l)) && (!only.length || only.some(re => re.test(r.l))));
+  const norm = ch.normalize && t.rows.find(r => r.l === ch.normalize);
+  const keys = set.series.map((s, i) => ({ key: "s" + i, name: s.n, color: COLOR[s.k], c: s.c }));
+  const data = rows.map(r => {
+    const o = { label: r.l };
+    keys.forEach(k => { const v = r.v[k.c]; o[k.key] = norm ? (typeof v === "number" ? v / norm.v[k.c] : null) : v; });
+    return o;
+  });
+  if (ch.sort) data.sort((a, b) => keys.reduce((s, k) => s + (b[k.key] || 0) - (a[k.key] || 0), 0));
+  const f = norm ? "p" : (rows[0] ? rows[0].f[keys[0].c] : "n");
+  return { data, keys, fmt: fmtBy(f), pct: f === "p", sec, secs };
+}
+
+function fullTable(t) {
+  const n = t.header.length;
+  const body = t.rows.map(r => {
+    if (r.h) return `<tr class="hrow"><td colspan="${n}">${esc(r.l)}</td></tr>`;
+    const cls = [r.i ? "ind" : "", /^total/i.test(r.l) ? "tot" : ""].join(" ").trim();
+    const cells = r.v.map((v, i) => `<td>${typeof v === "string" ? esc(v) : fmtBy(r.f[i])(v)}</td>`).join("");
+    return `<tr${cls ? ` class="${cls}"` : ""}><td>${esc(r.l)}</td>${cells}</tr>`;
+  }).join("");
+  return `<div class="tbl-wrap"><table class="data"><thead><tr>${t.header.map(h => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+
+function downloadCSV(t) {
+  const q = v => v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
+  const lines = [t.header.map(q).join(",")];
+  t.rows.forEach(r => lines.push(r.h ? q(r.l) : [r.l, ...r.v].map(q).join(",")));
+  const blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${t.code}_${t.nav.replace(/[^\w]+/g, "_")}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+
+function renderTable(t) {
+  if (!tableState[t.id]) tableState[t.id] = { set: 0, section: 0 };
+  const i = TABLES.indexOf(t), prev = TABLES[i - 1], next = TABLES[i + 1];
+  $("#view").innerHTML = `
+    <div class="crumbs"><a href="#overview">Overview</a> / ${esc(t.group)} / ${esc(t.code)}</div>
+    <div class="page-head"><h2><span class="tcode">${esc(t.code)}</span>${esc(t.title)}</h2><p>${esc(t.desc)}</p></div>
+    ${t.kpis.length ? `<section class="kpis">${t.kpis.map(k =>
+      `<div class="kpi"><div class="k-label">${esc(k.label)}</div><div class="k-value">${fmtBy(k.f)(k.v)}</div></div>`).join("")}</section>` : ""}
+    <div class="stack">
+      <article class="card" id="tchart"></article>
+      <article class="card">
+        <div class="card-head">
+          <div><h3>Full table</h3><div class="desc">${esc(t.code)} as published · ${t.rows.filter(r => !r.h).length} rows</div></div>
+          <div class="card-tools"><button class="icon-btn" id="csv">⤓ Download CSV</button></div>
+        </div>
+        ${fullTable(t)}
+      </article>
+    </div>
+    <nav class="pager">
+      ${prev ? `<a class="prev" href="#${prev.id}"><small>← Previous</small><b>${esc(prev.code)} · ${esc(prev.nav)}</b></a>` : ""}
+      ${next ? `<a class="next" href="#${next.id}"><small>Next →</small><b>${esc(next.code)} · ${esc(next.nav)}</b></a>` : ""}
+    </nav>`;
+  $("#csv").onclick = () => downloadCSV(t);
+  drawTableChart(t);
+}
+
+function drawTableChart(t) {
+  const st = tableState[t.id];
+  const root = $("#tchart");
+  const kind = t.chart.kind || "bars";
+  if (kind === "pyramid") {
+    root.innerHTML = `<div class="card-head"><div><h3>Chart</h3><div class="desc">Male to the left, female to the right</div></div></div>${legend([SERIES.m, SERIES.f])}<div class="body"></div>`;
+    drawPyramid($(".body", root), t.rows.filter(r => !/^total/i.test(r.l)).map(r => ({ age: r.l, m: r.v[0], f: r.v[1] })));
+    return;
+  }
+  if (kind === "lfstack") {
+    root.innerHTML = `<div class="card-head"><div><h3>Chart</h3><div class="desc">Share of the working-age population (15+)</div></div></div>${legend(LF_PARTS)}<div class="body"></div>`;
+    drawLFStack($(".body", root));
+    return;
+  }
+  const sets = t.chart.sets;
+  const { data, keys, fmt, pct, sec, secs } = chartRowsFor(t, st);
+  const setCtl = sets.length < 2 ? "" : sets.length <= 3
+    ? `<div class="seg" role="group" aria-label="Compare by">${sets.map((s, i) => `<button data-set="${i}" aria-pressed="${i === st.set}">${esc(s.name)}</button>`).join("")}</div>`
+    : `<select class="sel" id="setSel" aria-label="Series">${sets.map((s, i) => `<option value="${i}">${esc(s.name)}</option>`).join("")}</select>`;
+  const secCtl = secs.length < 2 ? "" :
+    `<select class="sel" id="secSel" aria-label="Breakdown">${secs.map((s, i) => `<option value="${i}">${esc(s.name)}</option>`).join("")}</select>`;
+  const unit = t.chart.normalize ? "share of each group" : pct ? "percentages" : "number of persons";
+  root.innerHTML = `
+    <div class="card-head">
+      <div><h3>${secs.length > 1 ? esc(sec.name) : "Chart"}</h3><div class="desc">Values shown as ${unit}</div></div>
+      <div class="card-tools">${secCtl}${setCtl}</div>
+    </div>
+    ${keys.length > 1 ? legend(keys) : ""}
+    <div class="body"></div>`;
+  const max = pct && t.chart.max ? Math.max(t.chart.max, ...data.flatMap(r => keys.map(k => r[k.key] || 0))) : undefined;
+  groupedBars($(".body", root), { rows: data, keys, fmt, max });
+
+  root.querySelectorAll("[data-set]").forEach(b => b.onclick = () => { st.set = +b.dataset.set; drawTableChart(t); });
+  const ss = $("#setSel", root); if (ss) { ss.value = st.set; ss.onchange = () => { st.set = +ss.value; drawTableChart(t); }; }
+  const sc = $("#secSel", root); if (sc) { sc.value = st.section; sc.onchange = () => { st.section = +sc.value; drawTableChart(t); }; }
+}
+
+/* =====================================================================
+   SIDEBAR + ROUTING
+   ===================================================================== */
+function buildNav(filter = "") {
+  const q = filter.trim().toLowerCase();
+  const match = t => !q || `${t.code} ${t.nav} ${t.title} ${t.group}`.toLowerCase().includes(q);
+  let html = q ? "" : `<a href="#overview" data-id="overview"><span class="code">▦</span><span>Overview</span></a>`;
+  let count = 0;
+  [...new Set(TABLES.map(t => t.group))].forEach(g => {
+    const items = TABLES.filter(t => t.group === g && match(t));
+    if (!items.length) return;
+    count += items.length;
+    html += `<div class="nav-group">${esc(g)}</div>` + items.map(t =>
+      `<a href="#${t.id}" data-id="${t.id}" title="${esc(t.title)}"><span class="code">${esc(t.code)}</span><span>${esc(t.nav)}</span></a>`).join("");
+  });
+  if (q && !count) html = `<div class="empty">No tables match “${esc(filter)}”.</div>`;
+  $("#nav").innerHTML = html;
+  markActive();
+}
+function currentId() { return location.hash.slice(1) || "overview"; }
+function markActive() {
+  const id = currentId();
+  document.querySelectorAll("#nav a").forEach(a => a.classList.toggle("active", a.dataset.id === id));
+}
+
+function route() {
+  hideTip();
+  document.body.classList.remove("nav-open");
+  const id = currentId();
+  const t = TABLES.find(x => x.id === id);
+  document.querySelectorAll(".overview-only").forEach(e => { e.hidden = !!t; });
+  if (t) {
+    document.title = `${t.code} · ${t.nav} — Vanuatu LFS 2025`;
+    renderTable(t);
+  } else {
+    document.title = "Vanuatu LFS 2025";
+    renderOverview();
+  }
+  markActive();
+  const a = $(`#nav a[data-id="${id}"]`);
+  if (a) a.scrollIntoView({ block: "nearest" });
+}
+function rerender() {
+  const t = TABLES.find(x => x.id === currentId());
+  if (t) drawTableChart(t); else renderOverview(false);
+}
+
+/* ---------- wiring ---------- */
+$("#sb-logo").src = $("#logo").src;
+$("#sb-count").textContent = `${TABLES.length} tables + overview`;
+buildNav();
+$("#sb-search").addEventListener("input", e => buildNav(e.target.value));
+$("#menu").onclick = () => document.body.classList.toggle("nav-open");
+$("#scrim").onclick = () => document.body.classList.remove("nav-open");
+document.querySelectorAll("#lens button").forEach(b => b.onclick = () => {
+  lens = b.dataset.v;
+  document.querySelectorAll("#lens button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  renderOverview(false);
+});
+$("#theme").onclick = () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = cur === "dark" ? "light" : "dark";
+};
+addEventListener("hashchange", () => { route(); scrollTo(0, 0); });
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(rerender, 120); });
+route();
+</script>
+</body>
+</html>
